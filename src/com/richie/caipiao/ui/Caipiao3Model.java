@@ -60,7 +60,7 @@ public class Caipiao3Model extends DefaultTableModel {
 	}
 
 	public int getRowCount() {
-		if (caipiaoList == null)
+		if (caipiaoList == null)	
 			return 0;
 		else
 			return caipiaoList.size();
