@@ -10,7 +10,7 @@ import com.richie.caipiao.vo.CaipiaoVo;
 public class Caipiao3Model extends DefaultTableModel {
 
 	/**
-	 * 
+	 * °¡
 	 */
 	private static final long serialVersionUID = 1L;
 	private List<CaipiaoVo> caipiaoList;
