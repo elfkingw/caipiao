@@ -11,6 +11,7 @@ public class BallLabel extends JLabel {
 	public static final String TYPE_JISHU ="1";
 	public static final String TYPE_XIAOQUSHU ="2";
 	public static final String TYPE_PRIME ="3";
+	
 	public BallLabel(String no) {
 		this.isSelected = false;
 		ImageIcon img=new ImageIcon(ClassLoader.getSystemResource("images/gray_"+no+".png"));//创建图片对象
