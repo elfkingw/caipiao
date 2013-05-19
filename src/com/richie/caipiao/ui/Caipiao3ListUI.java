@@ -34,7 +34,7 @@ import com.richie.caipiao.vo.CaipiaoVo;
 public class Caipiao3ListUI extends JPanel implements ActionListener {
 
 	/**
-	 * test1
+	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 	private static String httpUrl ="http://kaijiang.zhcw.com/zhcw/inc/ssq/ssq_wqhg.jsp?pageNum=1";
@@ -51,21 +51,21 @@ public class Caipiao3ListUI extends JPanel implements ActionListener {
 
 	public JButton getGenBtn() {
 		if (genBtn == null) {
-			genBtn = new JButton("²éÑ¯");
+			genBtn = new JButton("ï¿½ï¿½Ñ¯");
 		}
 		return genBtn;
 	}
 
 	public JButton getClearBtn() {
 		if (clearBtn == null) {
-			clearBtn = new JButton("ÏÂÔØÊý¾Ý");
+			clearBtn = new JButton("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		}
 		return clearBtn;
 	}
 
 	public JRadioButton getCheckBox1() {
 		if (radio1 == null) {
-			radio1 = new JRadioButton("50ÆÚ", true);
+			radio1 = new JRadioButton("50ï¿½ï¿½", true);
 			radio1.setSelected(true);
 		}
 		return radio1;
@@ -73,7 +73,7 @@ public class Caipiao3ListUI extends JPanel implements ActionListener {
 
 	public JRadioButton getCheckBox2() {
 		if (radio2 == null) {
-			radio2 = new JRadioButton("100ÆÚ", true);
+			radio2 = new JRadioButton("100ï¿½ï¿½", true);
 			radio2.setSelected(true);
 		}
 		return radio2;
@@ -81,7 +81,7 @@ public class Caipiao3ListUI extends JPanel implements ActionListener {
 
 	public JRadioButton getCheckBox3() {
 		if (radio3 == null) {
-			radio3 = new JRadioButton("150ÆÚ", true);
+			radio3 = new JRadioButton("150ï¿½ï¿½", true);
 			radio3.setSelected(true);
 		}
 		return radio3;
@@ -111,7 +111,7 @@ public class Caipiao3ListUI extends JPanel implements ActionListener {
 								row, col).getPreferredSize().getWidth();
 				width = Math.max(width, preferedWidth);
 			}
-			header.setResizingColumn(column); // ´ËÐÐºÜÖØÒª118
+			header.setResizingColumn(column); // ï¿½ï¿½ï¿½Ðºï¿½ï¿½ï¿½Òª118
 			if(col == 0){
 				column.setWidth(78);
 			}else if(col ==1){
@@ -143,7 +143,7 @@ public class Caipiao3ListUI extends JPanel implements ActionListener {
 									row, col).getPreferredSize().getWidth();
 					width = Math.max(width, preferedWidth);
 				}
-				header.setResizingColumn(column); // ´ËÐÐºÜÖØÒª118
+				header.setResizingColumn(column); // ï¿½ï¿½ï¿½Ðºï¿½ï¿½ï¿½Òª118
 				if(col == 0){
 					column.setWidth(79);
 				}else if(col ==1){
