@@ -1,7 +1,6 @@
 package com.richie.caipiao.combin;
 import java.util.ArrayList;
 import java.util.BitSet;
-import java.util.Collections;
 import java.util.List;
 
 public class Combination {
