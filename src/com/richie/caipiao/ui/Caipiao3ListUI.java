@@ -34,7 +34,7 @@ import com.richie.caipiao.vo.CaipiaoVo;
 public class Caipiao3ListUI extends JPanel implements ActionListener {
 
 	/**
-	 * 
+	 * 测试提交
 	 */
 	private static final long serialVersionUID = 1L;
 	private static String httpUrl ="http://kaijiang.zhcw.com/zhcw/inc/ssq/ssq_wqhg.jsp?pageNum=1";
