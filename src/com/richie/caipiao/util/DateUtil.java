@@ -7,6 +7,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class DateUtil {
+
 	public static int parseDate(String thedate) throws ParseException {
 		DateFormat objDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		Date date = objDateFormat.parse(thedate);
