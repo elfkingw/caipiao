@@ -1,4 +1,4 @@
-﻿package com.richie.caipiao.util;
+package com.richie.caipiao.util;
 
 import java.text.DateFormat;
 import java.text.ParseException;
