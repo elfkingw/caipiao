@@ -1,4 +1,4 @@
-﻿package com.richie.caipiao.ui;
+package com.richie.caipiao.ui;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -51,21 +51,21 @@ public class Caipiao3ListUI extends JPanel implements ActionListener {
 
 	public JButton getGenBtn() {
 		if (genBtn == null) {
-			genBtn = new JButton("镆ヨ");
+			genBtn = new JButton("查询");
 		}
 		return genBtn;
 	}
 
 	public JButton getClearBtn() {
 		if (clearBtn == null) {
-			clearBtn = new JButton("涓嬭浇鏁版嵁");
+			clearBtn = new JButton("下载数据");
 		}
 		return clearBtn;
 	}
 
 	public JRadioButton getCheckBox1() {
 		if (radio1 == null) {
-			radio1 = new JRadioButton("50链?, true);
+			radio1 = new JRadioButton("50期", true);
 			radio1.setSelected(true);
 		}
 		return radio1;
@@ -73,7 +73,7 @@ public class Caipiao3ListUI extends JPanel implements ActionListener {
 
 	public JRadioButton getCheckBox2() {
 		if (radio2 == null) {
-			radio2 = new JRadioButton("100链?, true);
+			radio2 = new JRadioButton("100期", true);
 			radio2.setSelected(true);
 		}
 		return radio2;
@@ -81,7 +81,7 @@ public class Caipiao3ListUI extends JPanel implements ActionListener {
 
 	public JRadioButton getCheckBox3() {
 		if (radio3 == null) {
-			radio3 = new JRadioButton("150链?, true);
+			radio3 = new JRadioButton("150期", true);
 			radio3.setSelected(true);
 		}
 		return radio3;
@@ -111,7 +111,7 @@ public class Caipiao3ListUI extends JPanel implements ActionListener {
 								row, col).getPreferredSize().getWidth();
 				width = Math.max(width, preferedWidth);
 			}
-			header.setResizingColumn(column); // 姝よ寰堥吨瑕?18
+			header.setResizingColumn(column); // 此行很重要118
 			if(col == 0){
 				column.setWidth(78);
 			}else if(col ==1){
@@ -143,7 +143,7 @@ public class Caipiao3ListUI extends JPanel implements ActionListener {
 									row, col).getPreferredSize().getWidth();
 					width = Math.max(width, preferedWidth);
 				}
-				header.setResizingColumn(column); // 姝よ寰堥吨瑕?18
+				header.setResizingColumn(column); // 此行很重要118
 				if(col == 0){
 					column.setWidth(79);
 				}else if(col ==1){
