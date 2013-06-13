@@ -1,4 +1,4 @@
-package org.jfree.test;
+﻿package org.jfree.test;
 
 import java.awt.*;
 import java.awt.event.*;

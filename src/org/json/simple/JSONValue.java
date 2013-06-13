@@ -1,4 +1,4 @@
-/*
+﻿/*
  * $Id: JSONValue.java,v 1.1 2006/04/15 14:37:04 platform Exp $
  * Created on 2006-4-15
  */

@@ -1,4 +1,4 @@
-package com.richie.caipiao.urlReader;
+ï»¿package com.richie.caipiao.urlReader;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -20,13 +20,13 @@ public abstract class AbsShahUrlReader {
 		this.caiPiaoNo = caipiaoNo1;
 	}
 	/**
-	 * ÍøÒ³µØÖ·
+	 * ç½‘é¡µåœ°å€
 	 * @return
 	 */
 	public abstract String getUrl();
 
 	/**
-	 * ¶ÁÈ¡ºìÇòĞÅÏ¢
+	 * è¯»å–çº¢çƒä¿¡æ¯
 	 * @param reader
 	 * @return
 	 */
@@ -34,13 +34,13 @@ public abstract class AbsShahUrlReader {
 	
 	public String[] getRedNos() throws Exception {
 
-		// Éú³ÉÒ»¸öURL¶ÔÏó
+		// ç”Ÿæˆä¸€ä¸ªURLå¯¹è±¡
 		URL url = new URL(getUrl());
 		// System.out.println(getUrl());
-		// ´ò¿ªURL
+		// æ‰“å¼€URL
 		HttpURLConnection urlConnection = (HttpURLConnection) url
 				.openConnection();
-		// µÃµ½ÊäÈëÁ÷£¬¼´»ñµÃÁËÍøÒ³µÄÄÚÈİ
+		// å¾—åˆ°è¾“å…¥æµï¼Œå³è·å¾—äº†ç½‘é¡µçš„å†…å®¹
 		BufferedReader reader = new BufferedReader(new InputStreamReader(
 				urlConnection.getInputStream(), "GBK"));
 		List<String> nos = getNos(reader);

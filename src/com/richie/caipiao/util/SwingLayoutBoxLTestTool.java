@@ -1,4 +1,4 @@
-package com.richie.caipiao.util;
+ï»¿package com.richie.caipiao.util;
 
 
 import java.awt.Dimension;
@@ -10,65 +10,65 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 
 /**
- * ¹¦ÄÜ£º
+ * åŠŸèƒ½ï¼š
  * 
  * @author wzj
  * 
  */
 public class SwingLayoutBoxLTestTool extends JFrame implements ActionListener {
 
-    // ¶¨Òå°´Å¤Êı×é²¢³õÊ¼»¯
-    private JButton[] jbArray = { new JButton("°´Å¤1"), new JButton("°´Å¤2"),
-	    new JButton("°´Å¤3"), new JButton("°´Å¤4") };
+    // å®šä¹‰æŒ‰æ‰­æ•°ç»„å¹¶åˆå§‹åŒ–
+    private JButton[] jbArray = { new JButton("æŒ‰æ‰­1"), new JButton("æŒ‰æ‰­2"),
+	    new JButton("æŒ‰æ‰­3"), new JButton("æŒ‰æ‰­4") };
 
-    // ´´½¨ºáÏòBoxÈİÆ÷
+    // åˆ›å»ºæ¨ªå‘Boxå®¹å™¨
     private Box b1 = Box.createHorizontalBox();
 
-    // ´´½¨×İÏòBoxÈİÆ÷
+    // åˆ›å»ºçºµå‘Boxå®¹å™¨
     private Box b2 = Box.createVerticalBox();
 
     public SwingLayoutBoxLTestTool() {
-	// ½«Íâ²ãºáÏòBoxÌí¼Ó½ø´°Ìå
+	// å°†å¤–å±‚æ¨ªå‘Boxæ·»åŠ è¿›çª—ä½“
 	this.add(b1);
-	// ÒÀ´ÎÏòÍâ²ãºáÏòBoxÖĞÌí¼Ó¿Ø¼ş=====================
-	// Ìí¼Ó¸ß¶ÈÎª200µÄ´¹Ö±Ö§¼Ü
+	// ä¾æ¬¡å‘å¤–å±‚æ¨ªå‘Boxä¸­æ·»åŠ æ§ä»¶=====================
+	// æ·»åŠ é«˜åº¦ä¸º200çš„å‚ç›´æ”¯æ¶
 	b1.add(Box.createVerticalStrut(200));
-	// Ìí¼Ó°´Å¥1
+	// æ·»åŠ æŒ‰é’®1
 	b1.add(jbArray[0]);
-	// Ìí¼Ó³¤¶ÈÎª40µÄË®Æ½Ö§¼Ü
+	// æ·»åŠ é•¿åº¦ä¸º40çš„æ°´å¹³æ”¯æ¶
 	b1.add(Box.createHorizontalStrut(40));
-	// Ìí¼Ó°´Å¥2
+	// æ·»åŠ æŒ‰é’®2
 	b1.add(jbArray[1]);
-	// Ìí¼ÓË®Æ½½ºË®
+	// æ·»åŠ æ°´å¹³èƒ¶æ°´
 	b1.add(Box.createHorizontalGlue());
-	// Ìí¼ÓÇ¶Ì×µÄ×İÏòBoxÈİÆ÷
+	// æ·»åŠ åµŒå¥—çš„çºµå‘Boxå®¹å™¨
 	b1.add(b2);
-	// ÒÀ´ÎÏòÄÚ²ãÇ¶Ì××İÏòBoxÖĞÌí¼Ó¿Ø¼ş==================
-	// Ìí¼Ó¿í¶ÈÎª100£¬¸ß¶ÈÎª20µÄ¹Ì¶¨ÇøÓò
+	// ä¾æ¬¡å‘å†…å±‚åµŒå¥—çºµå‘Boxä¸­æ·»åŠ æ§ä»¶==================
+	// æ·»åŠ å®½åº¦ä¸º100ï¼Œé«˜åº¦ä¸º20çš„å›ºå®šåŒºåŸŸ
 	b2.add(Box.createRigidArea(new Dimension(100, 20)));
-	// Ìí¼Ó°´Å¥3
+	// æ·»åŠ æŒ‰é’®3
 	b2.add(jbArray[2]);
-	// Ìí¼Ó´¹Ö±½ºË®
+	// æ·»åŠ å‚ç›´èƒ¶æ°´
 	b2.add(Box.createVerticalGlue());
-	// Ìí¼Ó°´Å¥4
+	// æ·»åŠ æŒ‰é’®4
 	b2.add(jbArray[3]);
-	// Ìí¼Ó³¤¶ÈÎª40µÄ´¹Ö±Ö§¼Ü
+	// æ·»åŠ é•¿åº¦ä¸º40çš„å‚ç›´æ”¯æ¶
 	b2.add(Box.createVerticalStrut(40));
-	// ÉèÖÃ´°ÌåµÄ¹Ø±Õ¶¯×÷¡¢±êÌâ¡¢´óĞ¡Î»ÖÃÒÔ¼°¿É¼ûĞÔµÈ
+	// è®¾ç½®çª—ä½“çš„å…³é—­åŠ¨ä½œã€æ ‡é¢˜ã€å¤§å°ä½ç½®ä»¥åŠå¯è§æ€§ç­‰
 	this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	this.setTitle("ÏäÊ½²¼¾ÖÊ¾Àı");
+	this.setTitle("ç®±å¼å¸ƒå±€ç¤ºä¾‹");
 	this.setBounds(100, 100, 400, 200);
 	this.setVisible(true);
 	this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     /*
-         * £¨·Ç Javadoc£©
+         * ï¼ˆé Javadocï¼‰
          * 
          * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
          */
     public void actionPerformed(ActionEvent e) {
-	// TODO ×Ô¶¯Éú³É·½·¨´æ¸ù
+	// TODO è‡ªåŠ¨ç”Ÿæˆæ–¹æ³•å­˜æ ¹
 
     }
 

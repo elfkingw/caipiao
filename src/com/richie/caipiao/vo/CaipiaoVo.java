@@ -1,4 +1,4 @@
-package com.richie.caipiao.vo;
+﻿package com.richie.caipiao.vo;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

@@ -1,4 +1,4 @@
-package com.richie.caipiao.urlReader;
+ï»¿package com.richie.caipiao.urlReader;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -24,15 +24,15 @@ public class CaipiaoUrlReader {
 			list.addAll(eList);
 		}
 		try{
-			// Éú³ÉÒ»¸öURL¶ÔÏó
+			// ç”Ÿæˆä¸€ä¸ªURLå¯¹è±¡
 			URL url = new URL(httpUrl);
 //			System.out.println(httpUrl);
-			// ´ò¿ªURL
+			// æ‰“å¼€URL
 			HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
-			// µÃµ½ÊäÈëÁ÷£¬¼´»ñµÃÁËÍøÒ³µÄÄÚÈİ
+			// å¾—åˆ°è¾“å…¥æµï¼Œå³è·å¾—äº†ç½‘é¡µçš„å†…å®¹
 			BufferedReader reader = new BufferedReader(new InputStreamReader(
 					urlConnection.getInputStream(), "utf-8"));
-			// ¶ÁÈ¡ÊäÈëÁ÷µÄÊı¾İ£¬²¢ÏÔÊ¾
+			// è¯»å–è¾“å…¥æµçš„æ•°æ®ï¼Œå¹¶æ˜¾ç¤º
 			String line = null;
 			CaipiaoVo vo = null;
 			while ((line = reader.readLine()) != null) {

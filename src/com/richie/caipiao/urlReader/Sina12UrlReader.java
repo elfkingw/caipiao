@@ -1,4 +1,4 @@
-package com.richie.caipiao.urlReader;
+ï»¿package com.richie.caipiao.urlReader;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -26,13 +26,13 @@ public class Sina12UrlReader {
 
 	public List<Xh12RedVo> getRedNos() throws Exception {
 
-		// Éú³ÉÒ»¸öURL¶ÔÏó
+		// ç”Ÿæˆä¸€ä¸ªURLå¯¹è±¡
 		URL url = new URL(getUrl());
 		// System.out.println(getUrl());
-		// ´ò¿ªURL
+		// æ‰“å¼€URL
 		HttpURLConnection urlConnection = (HttpURLConnection) url
 				.openConnection();
-		// µÃµ½ÊäÈëÁ÷£¬¼´»ñµÃÁËÍøÒ³µÄÄÚÈİ
+		// å¾—åˆ°è¾“å…¥æµï¼Œå³è·å¾—äº†ç½‘é¡µçš„å†…å®¹
 		BufferedReader reader = new BufferedReader(new InputStreamReader(
 				urlConnection.getInputStream(), "GBK"));
 		List<Xh12RedVo> redNos =  getNos(reader);

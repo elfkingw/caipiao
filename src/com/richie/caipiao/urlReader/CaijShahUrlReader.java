@@ -1,4 +1,4 @@
-package com.richie.caipiao.urlReader;
+﻿package com.richie.caipiao.urlReader;
 
 import java.io.BufferedReader;
 import java.util.ArrayList;

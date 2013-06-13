@@ -1,4 +1,4 @@
-package com.richie.caipiao.ui.ball;
+ï»¿package com.richie.caipiao.ui.ball;
 
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -14,7 +14,7 @@ public class BallLabel extends JLabel {
 	
 	public BallLabel(String no) {
 		this.isSelected = false;
-		ImageIcon img=new ImageIcon(ClassLoader.getSystemResource("images/gray_"+no+".png"));//´´½¨Í¼Æ¬¶ÔÏó
+		ImageIcon img=new ImageIcon(ClassLoader.getSystemResource("images/gray_"+no+".png"));//åˆ›å»ºå›¾ç‰‡å¯¹è±¡
 		this.setIcon(img);
 		this.ballNo = no;
 	}
@@ -22,10 +22,10 @@ public class BallLabel extends JLabel {
 	public BallLabel(String no, boolean isSelect) {
 		this.isSelected = isSelect;
 		if(isSelect){
-			ImageIcon img=new ImageIcon(ClassLoader.getSystemResource("images/red_"+no+".png"));//´´½¨Í¼Æ¬¶ÔÏó
+			ImageIcon img=new ImageIcon(ClassLoader.getSystemResource("images/red_"+no+".png"));//åˆ›å»ºå›¾ç‰‡å¯¹è±¡
 			this.setIcon(img);
 		}else{
-			ImageIcon img=new ImageIcon(ClassLoader.getSystemResource("images/gray_"+no+".png"));//´´½¨Í¼Æ¬¶ÔÏó
+			ImageIcon img=new ImageIcon(ClassLoader.getSystemResource("images/gray_"+no+".png"));//åˆ›å»ºå›¾ç‰‡å¯¹è±¡
 			this.setIcon(img);
 		}
 	}
@@ -41,28 +41,28 @@ public class BallLabel extends JLabel {
 	public void setSelected(boolean isSelected) {
 		this.isSelected = isSelected;
 		if(isSelected){
-			ImageIcon img=new ImageIcon(ClassLoader.getSystemResource("images/red_"+this.getBallNo()+".png"));//´´½¨Í¼Æ¬¶ÔÏó
+			ImageIcon img=new ImageIcon(ClassLoader.getSystemResource("images/red_"+this.getBallNo()+".png"));//åˆ›å»ºå›¾ç‰‡å¯¹è±¡
 			this.setIcon(img);
 		}else{
-			ImageIcon img=new ImageIcon(ClassLoader.getSystemResource("images/gray_"+this.getBallNo()+".png"));//´´½¨Í¼Æ¬¶ÔÏó
+			ImageIcon img=new ImageIcon(ClassLoader.getSystemResource("images/gray_"+this.getBallNo()+".png"));//åˆ›å»ºå›¾ç‰‡å¯¹è±¡
 			this.setIcon(img);
 		}
 		isSpecial = false;
 	}
 	public void onClick(){
 		if(!isSelected){
-			ImageIcon img=new ImageIcon(ClassLoader.getSystemResource("images/red_"+this.getBallNo()+".png"));//´´½¨Í¼Æ¬¶ÔÏó
+			ImageIcon img=new ImageIcon(ClassLoader.getSystemResource("images/red_"+this.getBallNo()+".png"));//åˆ›å»ºå›¾ç‰‡å¯¹è±¡
 			this.setIcon(img);
 			isSelected = true;
 		}else{
-			ImageIcon img=new ImageIcon(ClassLoader.getSystemResource("images/gray_"+this.getBallNo()+".png"));//´´½¨Í¼Æ¬¶ÔÏó
+			ImageIcon img=new ImageIcon(ClassLoader.getSystemResource("images/gray_"+this.getBallNo()+".png"));//åˆ›å»ºå›¾ç‰‡å¯¹è±¡
 			this.setIcon(img);
 			isSelected = false;
 		}
 		isSpecial = false;
 	}
 	public void ondbClick(){
-		ImageIcon img=new ImageIcon(ClassLoader.getSystemResource("images/violet_"+this.getBallNo()+".png"));//´´½¨Í¼Æ¬¶ÔÏó
+		ImageIcon img=new ImageIcon(ClassLoader.getSystemResource("images/violet_"+this.getBallNo()+".png"));//åˆ›å»ºå›¾ç‰‡å¯¹è±¡
 		this.setIcon(img);
 		isSelected = true;
 		isSpecial = true;

@@ -1,4 +1,4 @@
-package org.jfree.test;
+﻿package org.jfree.test;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -75,7 +75,7 @@ public class Test {
 		// dataset.addValue(3.0, series3, type8);
 
 		// create the chart...
-		JFreeChart chart = ChartFactory.createLineChart("血压水平分布图", // chart
+		JFreeChart chart = ChartFactory.createLineChart("琛€铡嬫按骞冲垎甯冨浘", // chart
 				"Type", // domain axis label
 				"Value", // range axis label
 				dataset, // data
@@ -103,15 +103,15 @@ public class Test {
 
 		renderer.setItemLabelsVisible(true);
 
-		// 创建主题样式
+		// 鍒涘缓涓婚镙峰纺
 		StandardChartTheme standardChartTheme = new StandardChartTheme("CN");
-		// 设置标题字体
-		standardChartTheme.setExtraLargeFont(new Font("隶书", Font.BOLD, 20));
-		// 设置图例的字体
-		standardChartTheme.setRegularFont(new Font("宋书", Font.PLAIN, 12));
-		// 设置轴向的字体
-		standardChartTheme.setLargeFont(new Font("宋书", Font.PLAIN, 12));
-		// 应用主题样式
+		// 璁剧疆镙囬瀛椾綋
+		standardChartTheme.setExtraLargeFont(new Font("闅朵功", Font.BOLD, 20));
+		// 璁剧疆锲句緥镄勫瓧浣?
+		standardChartTheme.setRegularFont(new Font("瀹嬩功", Font.PLAIN, 12));
+		// 璁剧疆杞村悜镄勫瓧浣?
+		standardChartTheme.setLargeFont(new Font("瀹嬩功", Font.PLAIN, 12));
+		// 搴旗敤涓婚镙峰纺
 		ChartFactory.setChartTheme(standardChartTheme);
 
 		JFrame f = new JFrame();

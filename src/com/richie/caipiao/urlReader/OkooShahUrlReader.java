@@ -1,4 +1,4 @@
-package com.richie.caipiao.urlReader;
+ï»¿package com.richie.caipiao.urlReader;
 
 import java.io.BufferedReader;
 import java.util.ArrayList;
@@ -10,9 +10,9 @@ import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 import org.json.simple.parser.JSONParser;
 /**
- * °Ä¿ÍÍøÉ±ºÅ¶ÁÈ¡
+ * æ¾³å®¢ç½‘æ€å·è¯»å–
  * @author wanghua1
- * 2013-2-17ÏÂÎç6:30:51
+ * 2013-2-17ä¸‹åˆ6:30:51
  *
  */
 public class OkooShahUrlReader extends AbsShahUrlReader{

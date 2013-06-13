@@ -1,4 +1,4 @@
-package com.richie.caipiao.ui;
+ï»¿package com.richie.caipiao.ui;
 
 import java.util.List;
 
@@ -10,14 +10,14 @@ import com.richie.caipiao.vo.CaipiaoVo;
 public class Caipiao3Model extends DefaultTableModel {
 
 	/**
-	 * °¡
+	 * å•Š
 	 */
 	private static final long serialVersionUID = 1L;
 	private List<CaipiaoVo> caipiaoList;
-	private String[] title_name = { "¿ª½±ÈÕÆÚ", "ÆÚºÅ", "3", "6", "9", "12", "15", "18",
+	private String[] title_name = { "å¼€å¥–æ—¥æœŸ", "æœŸå·", "3", "6", "9", "12", "15", "18",
 			"21", "24", "27", "30", "33", "1", "4", "7", "10", "13", "16", "19",
 			"22", "25", "28", "31", "2", "5", "8", "11", "14", "17", "20",
-			"23", "26", "29", "32",  "À¶Çò" };
+			"23", "26", "29", "32",  "è“çƒ" };
 
 	
 	public Caipiao3Model(List<CaipiaoVo> list) {

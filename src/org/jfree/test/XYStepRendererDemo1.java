@@ -1,4 +1,4 @@
-package org.jfree.test;
+﻿package org.jfree.test;
 
 import java.awt.BasicStroke;
 import java.awt.Dimension;
@@ -31,17 +31,17 @@ public class XYStepRendererDemo1 extends ApplicationFrame
 
   private static JFreeChart createChart(XYDataset paramXYDataset)
   {
-	//创建主题样式  
+	//鍒涘缓涓婚镙峰纺  
 	   StandardChartTheme standardChartTheme=new StandardChartTheme("CN");  
-	   //设置标题字体  
-	   standardChartTheme.setExtraLargeFont(new Font("隶书",Font.BOLD,20));  
-	   //设置图例的字体  
-	   standardChartTheme.setRegularFont(new Font("宋书",Font.PLAIN,12));  
-	   //设置轴向的字体  
-	   standardChartTheme.setLargeFont(new Font("宋书",Font.PLAIN,12));  
-	   //应用主题样式  
+	   //璁剧疆镙囬瀛椾綋  
+	   standardChartTheme.setExtraLargeFont(new Font("闅朵功",Font.BOLD,20));  
+	   //璁剧疆锲句緥镄勫瓧浣? 
+	   standardChartTheme.setRegularFont(new Font("瀹嬩功",Font.PLAIN,12));  
+	   //璁剧疆杞村悜镄勫瓧浣? 
+	   standardChartTheme.setLargeFont(new Font("瀹嬩功",Font.PLAIN,12));  
+	   //搴旗敤涓婚镙峰纺  
 	   ChartFactory.setChartTheme(standardChartTheme); 
-    JFreeChart localJFreeChart = ChartFactory.createXYLineChart("质数走势图", "期号", "个数", paramXYDataset, PlotOrientation.VERTICAL, true, true, false);
+    JFreeChart localJFreeChart = ChartFactory.createXYLineChart("璐ㄦ暟璧板娍锲?, "链熷佛", "涓暟", paramXYDataset, PlotOrientation.VERTICAL, true, true, false);
     XYPlot localXYPlot = (XYPlot)localJFreeChart.getPlot();
     localXYPlot.setDomainPannable(true);
     localXYPlot.setRangePannable(true);
@@ -57,7 +57,7 @@ public class XYStepRendererDemo1 extends ApplicationFrame
 
   private static XYDataset createDataset()
   {
-    XYSeries localXYSeries2 = new XYSeries("质数");
+    XYSeries localXYSeries2 = new XYSeries("璐ㄦ暟");
     localXYSeries2.add(112D, 1D);
     localXYSeries2.add(113D, 3D);
     localXYSeries2.add(114D, 2D);

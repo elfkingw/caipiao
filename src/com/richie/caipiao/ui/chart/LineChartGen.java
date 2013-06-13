@@ -1,4 +1,4 @@
-package com.richie.caipiao.ui.chart;
+ï»¿package com.richie.caipiao.ui.chart;
 
 import java.awt.BasicStroke;
 import java.awt.BorderLayout;
@@ -63,41 +63,41 @@ public class LineChartGen  {
 	
 	public  JFreeChart createChart(int size) {
 		CategoryDataset paramCategoryDataset = createDataset(size);
-		// ´´½¨Ö÷ÌâÑùÊ½
+		// åˆ›å»ºä¸»é¢˜æ ·å¼
 		StandardChartTheme standardChartTheme = new StandardChartTheme("CN");
-		// ÉèÖÃ±êÌâ×ÖÌå
-		standardChartTheme.setExtraLargeFont(new Font("Á¥Êé", Font.BOLD, 20));
-		// ÉèÖÃÍ¼ÀıµÄ×ÖÌå
-		standardChartTheme.setRegularFont(new Font("ËÎÊé", Font.PLAIN, 12));
-		// ÉèÖÃÖáÏòµÄ×ÖÌå
-		standardChartTheme.setLargeFont(new Font("ËÎÊé", Font.PLAIN, 12));
-		// Ó¦ÓÃÖ÷ÌâÑùÊ½
+		// è®¾ç½®æ ‡é¢˜å­—ä½“
+		standardChartTheme.setExtraLargeFont(new Font("éš¶ä¹¦", Font.BOLD, 20));
+		// è®¾ç½®å›¾ä¾‹çš„å­—ä½“
+		standardChartTheme.setRegularFont(new Font("å®‹ä¹¦", Font.PLAIN, 12));
+		// è®¾ç½®è½´å‘çš„å­—ä½“
+		standardChartTheme.setLargeFont(new Font("å®‹ä¹¦", Font.PLAIN, 12));
+		// åº”ç”¨ä¸»é¢˜æ ·å¼
 		ChartFactory.setChartTheme(standardChartTheme);
 		JFreeChart localJFreeChart = ChartFactory.createLineChart(title,
-				"ÆÚºÅ", yTitle, paramCategoryDataset, PlotOrientation.VERTICAL,
+				"æœŸå·", yTitle, paramCategoryDataset, PlotOrientation.VERTICAL,
 				true, true, false);
 		CategoryPlot localCategoryPlot = (CategoryPlot) localJFreeChart
 				.getPlot();
-//		SymbolAxis localSymbolAxis = new SymbolAxis("¸öÊı", new String[] {
+//		SymbolAxis localSymbolAxis = new SymbolAxis("ä¸ªæ•°", new String[] {
 //				"0", "1", "2", "3", "4", "5", "6" });
 //		localCategoryPlot.setRangeAxis(localSymbolAxis);
 		ChartUtilities.applyCurrentTheme(localJFreeChart);
 		LineAndShapeRenderer xyitem = (LineAndShapeRenderer) localCategoryPlot
 		.getRenderer();
 		CategoryPlot plot = (CategoryPlot) localJFreeChart.getPlot();
-		//ÉèÖÃÍø¸ñ±³¾°ÑÕÉ«
+		//è®¾ç½®ç½‘æ ¼èƒŒæ™¯é¢œè‰²
 		plot.setBackgroundPaint(Color.white);
-		//ÉèÖÃÍø¸ñÊúÏßÑÕÉ«
+		//è®¾ç½®ç½‘æ ¼ç«–çº¿é¢œè‰²
 		plot.setDomainGridlinePaint(Color.black);
-		//ÉèÖÃÍø¸ñºáÏßÑÕÉ«
+		//è®¾ç½®ç½‘æ ¼æ¨ªçº¿é¢œè‰²
 		plot.setRangeGridlinePaint(Color.black);
-		//ÉèÖÃÇúÏßÍ¼ÓëxyÖáµÄ¾àÀë
+		//è®¾ç½®æ›²çº¿å›¾ä¸xyè½´çš„è·ç¦»
 		plot.setAxisOffset(new RectangleInsets(0D, 0D, 0D, 0D));
 
 		NumberAxis rangeAxis = (NumberAxis) plot.getRangeAxis();
 		rangeAxis.setStandardTickUnits(NumberAxis.createIntegerTickUnits());
 		rangeAxis.setAutoRangeIncludesZero(true);
-		if("ºÍÖµ".equals(type)){
+		if("å’Œå€¼".equals(type)){
 			rangeAxis.setLowerBound(70);
 			rangeAxis.setTickUnit(new   NumberTickUnit(10));
 		}else{
@@ -105,7 +105,7 @@ public class LineChartGen  {
 			rangeAxis.setTickUnit(new   NumberTickUnit(1));
 		}
 //		rangeAxis.setUpperMargin(0.20);
-		//ÉèÖÃÇúÏßÏÔÊ¾¸÷Êı¾İµãµÄÖµ
+		//è®¾ç½®æ›²çº¿æ˜¾ç¤ºå„æ•°æ®ç‚¹çš„å€¼
 		xyitem.setBaseItemLabelsVisible(true);   
 		xyitem.setBasePositiveItemLabelPosition(new ItemLabelPosition(ItemLabelAnchor.OUTSIDE12, TextAnchor.BASELINE_LEFT));
 		xyitem.setSeriesStroke(0, new BasicStroke(1.5F));
@@ -152,7 +152,7 @@ public class LineChartGen  {
 			vo.setValue(a);
 			list.add(vo);
 		}
-		LineChartGen panel = new LineChartGen(list,"ÖÊÊı×ßÊÆÍ¼","¸öÊı","Ö¸Êı");
+		LineChartGen panel = new LineChartGen(list,"è´¨æ•°èµ°åŠ¿å›¾","ä¸ªæ•°","æŒ‡æ•°");
 		JFreeChart chart = panel.createChart(30);
 		ChartPanel chartpanel = new ChartPanel(chart, true);
 		f.add(chartpanel,"Center");

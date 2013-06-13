@@ -1,4 +1,4 @@
-package com.richie.caipiao.ui;
+ï»¿package com.richie.caipiao.ui;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -58,21 +58,21 @@ public class CaipiaoListUI extends JPanel implements ActionListener {
 
 	public JButton getGenBtn() {
 		if (genBtn == null) {
-			genBtn = new JButton("²éÑ¯");
+			genBtn = new JButton("æŸ¥è¯¢");
 		}
 		return genBtn;
 	}
 
 	public JButton getClearBtn() {
 		if (clearBtn == null) {
-			clearBtn = new JButton("ÏÂÔØÊı¾İ");
+			clearBtn = new JButton("ä¸‹è½½æ•°æ®");
 		}
 		return clearBtn;
 	}
 
 	public JRadioButton getCheckBox1() {
 		if (radio1 == null) {
-			radio1 = new JRadioButton("50ÆÚ", true);
+			radio1 = new JRadioButton("50æœŸ", true);
 			radio1.setSelected(true);
 		}
 		return radio1;
@@ -80,7 +80,7 @@ public class CaipiaoListUI extends JPanel implements ActionListener {
 
 	public JRadioButton getCheckBox2() {
 		if (radio2 == null) {
-			radio2 = new JRadioButton("100ÆÚ", true);
+			radio2 = new JRadioButton("100æœŸ", true);
 			radio2.setSelected(true);
 		}
 		return radio2;
@@ -88,7 +88,7 @@ public class CaipiaoListUI extends JPanel implements ActionListener {
 
 	public JRadioButton getCheckBox3() {
 		if (radio3 == null) {
-			radio3 = new JRadioButton("150ÆÚ", true);
+			radio3 = new JRadioButton("150æœŸ", true);
 			radio3.setSelected(true);
 		}
 		return radio3;
@@ -118,7 +118,7 @@ public class CaipiaoListUI extends JPanel implements ActionListener {
 									row, col).getPreferredSize().getWidth();
 					width = Math.max(width, preferedWidth);
 				}
-				header.setResizingColumn(column); // ´ËĞĞºÜÖØÒª118
+				header.setResizingColumn(column); // æ­¤è¡Œå¾ˆé‡è¦118
 				if(col == 0){
 					column.setWidth(78);
 				}else if(col ==1){
@@ -150,7 +150,7 @@ public class CaipiaoListUI extends JPanel implements ActionListener {
 									row, col).getPreferredSize().getWidth();
 					width = Math.max(width, preferedWidth);
 				}
-				header.setResizingColumn(column); // ´ËĞĞºÜÖØÒª118
+				header.setResizingColumn(column); // æ­¤è¡Œå¾ˆé‡è¦118
 				if(col == 0){
 					column.setWidth(79);
 				}else if(col ==1){

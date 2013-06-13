@@ -1,4 +1,4 @@
-package com.richie.caipiao.ui;
+ï»¿package com.richie.caipiao.ui;
 
 
 import java.awt.BorderLayout;
@@ -32,26 +32,26 @@ public class CaipiaoMainUI extends JFrame implements ActionListener{
 		setBounds(150,100,1120,650);
 		setDefaultCloseOperation(3);
 		setLayout(new BorderLayout());
-		setTitle("²ÊÆ±·ÖÎö");
+		setTitle("å½©ç¥¨åˆ†æ");
 		ImageIcon ico = new ImageIcon(System.getProperty("user.dir")+"\\img\\logo.jpg");
 		setIconImage(ico.getImage());
 		JMenuBar menuBar = new JMenuBar();
-		JMenu mnXh = new JMenu("Ñ¡ºÅÆ÷");
+		JMenu mnXh = new JMenu("é€‰å·å™¨");
 		menuBar.add(mnXh);
-		mnXuanhao = new JMenuItem("Ñ¡ºÅ·ÖÎö");
+		mnXuanhao = new JMenuItem("é€‰å·åˆ†æ");
 		mnXh.add(mnXuanhao);
-		JMenu mnHelp = new JMenu("°ïÖú");
+		JMenu mnHelp = new JMenu("å¸®åŠ©");
 		menuBar.add(mnHelp);
-		miAbout = new JMenuItem("¹ØÓÚ"); 
+		miAbout = new JMenuItem("å…³äº"); 
 		mnHelp.add(miAbout);
 		miAbout.addActionListener(this);
 		mnXuanhao.addActionListener(this);
 		this.setJMenuBar(menuBar);
 		tab = new JTabbedPane();
-		tab.addTab("²ÊÆ±ÀúÊ·ĞÅÏ¢", new CaipiaoListUI());
-		tab.addTab("²ÊÆ±Óà3ĞÅÏ¢", new Caipiao3ListUI());
-		tab.addTab("²ÊÆ±Êı¾İ·ÖÎö", new CaipiaoReportUI());
-		tab.addTab("²ÊÆ±Í³¼ÆÍ¼±í", new CaipiaoChartUI());
+		tab.addTab("å½©ç¥¨å†å²ä¿¡æ¯", new CaipiaoListUI());
+		tab.addTab("å½©ç¥¨ä½™3ä¿¡æ¯", new Caipiao3ListUI());
+		tab.addTab("å½©ç¥¨æ•°æ®åˆ†æ", new CaipiaoReportUI());
+		tab.addTab("å½©ç¥¨ç»Ÿè®¡å›¾è¡¨", new CaipiaoChartUI());
 		add(tab,"Center");
 	}
 	
@@ -69,7 +69,7 @@ public class CaipiaoMainUI extends JFrame implements ActionListener{
 	}
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource() == miAbout){
-			JOptionPane.showMessageDialog(this, "eflkingw°æÈ¨ËùÓĞ\n ²ÊÆ±Êı¾İÀ´×ÔÖĞ²ÊÍøhttp://zhcw.com","ÌáÊ¾",JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(this, "eflkingwç‰ˆæƒæ‰€æœ‰\n å½©ç¥¨æ•°æ®æ¥è‡ªä¸­å½©ç½‘http://zhcw.com","æç¤º",JOptionPane.INFORMATION_MESSAGE);
 		}else if(e.getSource() == mnXuanhao){
 			CaipiaoXhWin ui = new CaipiaoXhWin();
 			ui.setVisible(true);

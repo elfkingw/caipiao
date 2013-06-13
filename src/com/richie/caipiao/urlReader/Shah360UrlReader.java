@@ -1,12 +1,12 @@
-package com.richie.caipiao.urlReader;
+ï»¿package com.richie.caipiao.urlReader;
 
 import java.io.BufferedReader;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * 360É±ºÅ½âÎö
+ * 360æ€å·è§£æ
  * @author wanghua1
- * 2013-2-17ÏÂÎç6:31:16
+ * 2013-2-17ä¸‹åˆ6:31:16
  *
  */
 public class Shah360UrlReader extends AbsShahUrlReader{

@@ -1,4 +1,4 @@
-package com.richie.caipiao.ui;
+﻿package com.richie.caipiao.ui;
 
 import java.awt.Color;
 import java.awt.Component;

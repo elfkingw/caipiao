@@ -1,4 +1,4 @@
-package com.richie.caipiao.vo;
+﻿package com.richie.caipiao.vo;
 
 public class ReportVo {
 

@@ -1,4 +1,4 @@
-package com.richie.caipiao.vo;
+ï»¿package com.richie.caipiao.vo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,15 +41,15 @@ public class Xh12RedVo {
 	
 	public String toString(){
 		StringBuffer sb = new StringBuffer("");
-		sb.append(" 12ºìÇò£º") ;
+		sb.append(" 12çº¢çƒï¼š") ;
 		for(String no : red12Ball){
 			sb.append(no+"  ");
 		}
-		sb.append("  3À¶Çò£º") ;
+		sb.append("  3è“çƒï¼š") ;
 		for(String no : blue3Ball){
 			sb.append(no+"  ");
 		}
-		sb.append("Ã½Ìå£º"+getMeiTiName()) ;
+		sb.append("åª’ä½“ï¼š"+getMeiTiName()) ;
 		return sb.toString();
 	}
 }

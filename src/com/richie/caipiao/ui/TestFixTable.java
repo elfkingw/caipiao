@@ -1,4 +1,4 @@
-package com.richie.caipiao.ui;
+﻿package com.richie.caipiao.ui;
 import java.awt.BorderLayout;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;

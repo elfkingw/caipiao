@@ -1,4 +1,4 @@
-package com.richie.caipiao.ui;
+ï»¿package com.richie.caipiao.ui;
 
 
 import java.awt.BorderLayout;
@@ -48,46 +48,46 @@ public class CaipiaoReportUI extends JPanel implements ActionListener{
 	private JComboBox comboxBox;
 	public JButton getGenBtn(){
 		if(genBtn == null){
-			genBtn = new JButton("²ÊÆ±·ÖÎö");
+			genBtn = new JButton("å½©ç¥¨åˆ†æ");
 		}
 		return genBtn;
 	}
 	public JButton getClearBtn(){
 		if(clearBtn == null){
-			clearBtn = new JButton("Çå¿ÕÏûÏ¢");
+			clearBtn = new JButton("æ¸…ç©ºæ¶ˆæ¯");
 		}
 		return clearBtn;
 	}
 	public JRadioButton getCheckBox(){
 		if(radio == null){
-			radio = new  JRadioButton("15ÆÚ",true);
+			radio = new  JRadioButton("15æœŸ",true);
 		}
 		return radio;
 	}
 	public JRadioButton getCheckBox0(){
 		if(radio0 == null){
-			radio0 = new  JRadioButton("25ÆÚ",true);
+			radio0 = new  JRadioButton("25æœŸ",true);
 			radio0.setSelected(true);
 		}
 		return radio0;
 	}
 	public JRadioButton getCheckBox1(){
 		if(radio1 == null){
-			radio1 = new  JRadioButton("50ÆÚ",true);
+			radio1 = new  JRadioButton("50æœŸ",true);
 			radio1.setSelected(true);
 		}
 		return radio1;
 	}
 	public JRadioButton getCheckBox2(){
 		if(radio2 == null){
-			radio2 = new  JRadioButton("100ÆÚ",true);
+			radio2 = new  JRadioButton("100æœŸ",true);
 			radio2.setSelected(true);
 		}
 		return radio2;
 	}
 	public JRadioButton getCheckBox3(){
 		if(radio3 == null){
-			radio3 = new  JRadioButton("150ÆÚ",true);
+			radio3 = new  JRadioButton("150æœŸ",true);
 			radio3.setSelected(true);
 		}
 		return radio3;
@@ -114,7 +114,7 @@ public class CaipiaoReportUI extends JPanel implements ActionListener{
 		add(btnPanel,"North");
 		JSplitPane centerPanel = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
 		JPanel userPanel = new JPanel();
-		JLabel label = new JLabel("·ÖÎöÆÚºÅ:");
+		JLabel label = new JLabel("åˆ†ææœŸå·:");
 		userPanel.add(label);
 		comboxBox = new JComboBox();
 		userPanel.add(comboxBox);
@@ -184,7 +184,7 @@ public class CaipiaoReportUI extends JPanel implements ActionListener{
 			
 			list = CaipiaoListUI.fillList(list, caipiaoNo ,size);
 			CaipiaoVo lastVo =  getVo(caipiaoNo,list);
-			String msg = "µÚ¡¾"+lastVo.getCaipiaoNo()+"¡¿ÆÚ¡¾"+lastVo.toString()+"¡¿ ·ÖÎö½ü¡¾"+size+"¡¿ÆÚ½á¹ûÈçÏÂ£º";
+			String msg = "ç¬¬ã€"+lastVo.getCaipiaoNo()+"ã€‘æœŸã€"+lastVo.toString()+"ã€‘ åˆ†æè¿‘ã€"+size+"ã€‘æœŸç»“æœå¦‚ä¸‹ï¼š";
 			addMsg(msg);
 			String[] redNo = lastVo.getRedNo();
 			allMap =  new HashMap<String, Integer>();
@@ -223,14 +223,14 @@ public class CaipiaoReportUI extends JPanel implements ActionListener{
 				while(it.hasNext()){
 					String key = (String) it.next(); 
 					List<String> rList =  nosMap.get(key); 
-					msg = "ºÅÂë¡¾"+no+"¡¿ºóÃæ³öÏÖ¡¾"+key+"¡¿ÓĞ¡¾"+rList.size()+"¡¿´Î:";
+					msg = "å·ç ã€"+no+"ã€‘åé¢å‡ºç°ã€"+key+"ã€‘æœ‰ã€"+rList.size()+"ã€‘æ¬¡:";
 					for(int i =0;i<rList.size();i++){
 						msg+="&nbsp;&nbsp;&nbsp;&nbsp;"+ rList.get(i);
 					}
 					addMsg(msg);
 				}
 			}
-			msg = "<font color='red' >×Ü½á£º<font/><br/>";
+			msg = "<font color='red' >æ€»ç»“ï¼š<font/><br/>";
 			Iterator<String> it = allMap.keySet().iterator();
 			List<ReportVo> lis = new ArrayList<ReportVo>();
 			while(it.hasNext()){
@@ -244,7 +244,7 @@ public class CaipiaoReportUI extends JPanel implements ActionListener{
 			CaipiaoComparator comparator = new CaipiaoComparator();
 			Collections.sort(lis, comparator);
 			for(int i =0;i<lis.size();i++){
-				msg += "&nbsp;&nbsp;ºÅÂë¡¾"+lis.get(i).getCaipiaoNo()+"¡¿ÓĞ¡¾"+lis.get(i).getTimes()+"¡¿´Î<br/>";
+				msg += "&nbsp;&nbsp;å·ç ã€"+lis.get(i).getCaipiaoNo()+"ã€‘æœ‰ã€"+lis.get(i).getTimes()+"ã€‘æ¬¡<br/>";
 			}
 			addMsg(msg);
 		}catch(Exception e){
@@ -297,7 +297,7 @@ public class CaipiaoReportUI extends JPanel implements ActionListener{
 		if(e.getSource() == getGenBtn()){
 			getGenBtn().setEnabled(false);
 			clearMsg();
-			addMsg("<font color='red' >ÖØÏÖ·ÖÎöÈçÏÂ£º<font/>");
+			addMsg("<font color='red' >é‡ç°åˆ†æå¦‚ä¸‹ï¼š<font/>");
 			int size = 50;
 			if(getCheckBox0().isSelected()){
 				size = 25;
@@ -310,7 +310,7 @@ public class CaipiaoReportUI extends JPanel implements ActionListener{
 			}
 			String caipiaoNo = (String) comboxBox.getSelectedItem();
 			Map<String, Integer> map = onGenRpt(caipiaoNo,false,size);
-			addMsg("<font color='red' >Óà3·ÖÎöÈçÏÂ£º<font/>");
+			addMsg("<font color='red' >ä½™3åˆ†æå¦‚ä¸‹ï¼š<font/>");
 			Map<String, Integer> yu3Map = onGenRpt(caipiaoNo,true,size);
 			Iterator<String> it = map.keySet().iterator();
 			List<ReportVo> lis = new ArrayList<ReportVo>();
@@ -327,10 +327,10 @@ public class CaipiaoReportUI extends JPanel implements ActionListener{
 			}
 			CaipiaoComparator comparator = new CaipiaoComparator();
 			Collections.sort(lis, comparator);
-			addMsg("Á½ÖÖ¶¼³öÏÖµÄºÅÂë:");
+			addMsg("ä¸¤ç§éƒ½å‡ºç°çš„å·ç :");
 			String msg = "";
 			for(int i =0;i<lis.size();i++){
-				msg += "&nbsp;&nbsp;¡¾"+lis.get(i).getCaipiaoNo()+"¡¿Ò»¹²ÓĞ¡¾"+lis.get(i).getTimes()+"¡¿´Î<br/>";
+				msg += "&nbsp;&nbsp;ã€"+lis.get(i).getCaipiaoNo()+"ã€‘ä¸€å…±æœ‰ã€"+lis.get(i).getTimes()+"ã€‘æ¬¡<br/>";
 			}
 			addMsg(msg);
 		}else if(e.getSource() == getClearBtn()){
@@ -350,9 +350,9 @@ public class CaipiaoReportUI extends JPanel implements ActionListener{
 	class GoThread extends Thread{  
 		public void run() {  
 			try{
-				JOptionPane.showMessageDialog(null, "","ÌáÊ¾",JOptionPane.INFORMATION_MESSAGE);
+				JOptionPane.showMessageDialog(null, "","æç¤º",JOptionPane.INFORMATION_MESSAGE);
 			 }catch(Exception e){
-				 JOptionPane.showMessageDialog(null, "Éú³É±¨±í³ö´í£º"+e.getMessage(),"ÌáÊ¾",JOptionPane.INFORMATION_MESSAGE);
+				 JOptionPane.showMessageDialog(null, "ç”ŸæˆæŠ¥è¡¨å‡ºé”™ï¼š"+e.getMessage(),"æç¤º",JOptionPane.INFORMATION_MESSAGE);
 				 e.printStackTrace();
 			 }finally{
 				 getGenBtn().setEnabled(true);

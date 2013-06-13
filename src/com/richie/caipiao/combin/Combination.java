@@ -1,4 +1,4 @@
-package com.richie.caipiao.combin;
+ï»¿package com.richie.caipiao.combin;
 import java.util.ArrayList;
 import java.util.BitSet;
 import java.util.List;
@@ -21,14 +21,14 @@ public class Combination {
 
 	}
 	/**
-	 * 1¡¢start µÚÒ»¸ötrueÆ¬¶ÎµÄÆğÊ¼Î»£¬end½ØÖ¹Î»
-	 * 2¡¢°ÑµÚÒ»¸ötrueÆ¬¶Î¶¼ÖÃfalse
-	 * 3¡¢Êı×é´Ó0ÏÂ±êÆğÊ¼µ½ÒÔµÚÒ»¸ötrueÆ¬¶ÎÔªËØÊıÁ¿¼õÒ»ÎªÏÂ±êµÄÎ»ÖÃ¶¼ÖÃtrue
-	 * 4¡¢°ÑµÚÒ»¸ötrueÆ¬¶Îend½ØÖ¹Î»ÖÃtrue
+	 * 1ã€start ç¬¬ä¸€ä¸ªtrueç‰‡æ®µçš„èµ·å§‹ä½ï¼Œendæˆªæ­¢ä½
+	 * 2ã€æŠŠç¬¬ä¸€ä¸ªtrueç‰‡æ®µéƒ½ç½®false
+	 * 3ã€æ•°ç»„ä»0ä¸‹æ ‡èµ·å§‹åˆ°ä»¥ç¬¬ä¸€ä¸ªtrueç‰‡æ®µå…ƒç´ æ•°é‡å‡ä¸€ä¸ºä¸‹æ ‡çš„ä½ç½®éƒ½ç½®true
+	 * 4ã€æŠŠç¬¬ä¸€ä¸ªtrueç‰‡æ®µendæˆªæ­¢ä½ç½®true
 	 * 
-	 * @param bs Êı×éÊÇ·ñÏÔÊ¾µÄ±êÖ¾Î»
-	 * @param m Êı×é³¤¶È
-	 * @return boolean ÊÇ·ñ»¹ÓĞÆäËû×éºÏ
+	 * @param bs æ•°ç»„æ˜¯å¦æ˜¾ç¤ºçš„æ ‡å¿—ä½
+	 * @param m æ•°ç»„é•¿åº¦
+	 * @return boolean æ˜¯å¦è¿˜æœ‰å…¶ä»–ç»„åˆ
 	 */
 	private boolean moveNext(BitSet bs, int m) {
 		int start = -1;
@@ -53,10 +53,10 @@ public class Combination {
 	}
 	
 	/**
-	 * Êä³öÉú³ÉµÄ×éºÏ½á¹û
+	 * è¾“å‡ºç”Ÿæˆçš„ç»„åˆç»“æœ
 	 * 
-	 * @param array Êı×é
-	 * @param bs Êı×éÔªËØÊÇ·ñÏÔÊ¾µÄ±êÖ¾Î»¼¯ºÏ
+	 * @param array æ•°ç»„
+	 * @param bs æ•°ç»„å…ƒç´ æ˜¯å¦æ˜¾ç¤ºçš„æ ‡å¿—ä½é›†åˆ
 	 */
 	private void printAll(List<String> array, BitSet bs) {
 		String[] res = null; 

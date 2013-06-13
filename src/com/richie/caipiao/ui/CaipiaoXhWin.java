@@ -1,4 +1,4 @@
-package com.richie.caipiao.ui;
+ï»¿package com.richie.caipiao.ui;
 
 
 import java.awt.BorderLayout;
@@ -77,71 +77,71 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 	private JButton cBtn;
 	private JButton cancelBtn;
 	private JButton exportBtn;
-	private JButton shaHBtn;//ºìÇòÉ±ºÅ
-	private JButton xuanHBtn;//Ñ¡ºÅ
+	private JButton shaHBtn;//çº¢çƒæ€å·
+	private JButton xuanHBtn;//é€‰å·
 	
 	private JComboBox minJishuBox;
 	private JComboBox maxJishuBox;
 	private JComboBox minXiaoshuBox;
 	private JComboBox maxXiaoshuBox;
-	private JComboBox minPrimeBox;//ÖÊÊı¸öÊı
-	private JComboBox maxPrimeBox;//ÖÊÊı¸öÊı
-	private JCheckBox checkbox4;//Á¬ºÅ
-	private JCheckBox checkbox5;//ºÍÖ¸¹ıÂË
-	private JTextField minSum;//ºÍÖµ×îĞ¡Öµ
-	private JTextField maxSum;//ºÍÖµ×î´óÖµ
-	private JCheckBox checkbox6;//×îĞ¡Öµ
-	private JTextField minfrist;//¿ªÍ·×îĞ¡Öµ
-	private JTextField maxfrist;//¿ªÍ·×î´óÖµ
+	private JComboBox minPrimeBox;//è´¨æ•°ä¸ªæ•°
+	private JComboBox maxPrimeBox;//è´¨æ•°ä¸ªæ•°
+	private JCheckBox checkbox4;//è¿å·
+	private JCheckBox checkbox5;//å’ŒæŒ‡è¿‡æ»¤
+	private JTextField minSum;//å’Œå€¼æœ€å°å€¼
+	private JTextField maxSum;//å’Œå€¼æœ€å¤§å€¼
+	private JCheckBox checkbox6;//æœ€å°å€¼
+	private JTextField minfrist;//å¼€å¤´æœ€å°å€¼
+	private JTextField maxfrist;//å¼€å¤´æœ€å¤§å€¼
 	
 	public JButton getGenBtn(){
 		if(genBtn == null){
-			genBtn = new JButton("Ñ¡ºÅ·ÖÎö");
+			genBtn = new JButton("é€‰å·åˆ†æ");
 		}
 		return genBtn;
 	}
 	public JButton getClearBtn(){
 		if(clearBtn == null){
-			clearBtn = new JButton("Çå¿ÕÏûÏ¢");
+			clearBtn = new JButton("æ¸…ç©ºæ¶ˆæ¯");
 		}
 		return clearBtn;
 	}
 	public JButton getExportBtn(){
 		if(exportBtn == null){
-			exportBtn = new JButton("µ¼³ö·ÖÎö½á¹û");
+			exportBtn = new JButton("å¯¼å‡ºåˆ†æç»“æœ");
 		}
 		return exportBtn;
 	}
 	public JRadioButton getCheckBox(){
 		if(radio == null){
-			radio = new  JRadioButton("15ÆÚ",true);
+			radio = new  JRadioButton("15æœŸ",true);
 		}
 		return radio;
 	}
 	public JRadioButton getCheckBox0(){
 		if(radio0 == null){
-			radio0 = new  JRadioButton("25ÆÚ",true);
+			radio0 = new  JRadioButton("25æœŸ",true);
 			radio0.setSelected(true);
 		}
 		return radio0;
 	}
 	public JRadioButton getCheckBox1(){
 		if(radio1 == null){
-			radio1 = new  JRadioButton("50ÆÚ",true);
+			radio1 = new  JRadioButton("50æœŸ",true);
 			radio1.setSelected(true);
 		}
 		return radio1;
 	}
 	public JRadioButton getCheckBox2(){
 		if(radio2 == null){
-			radio2 = new  JRadioButton("100ÆÚ",true);
+			radio2 = new  JRadioButton("100æœŸ",true);
 			radio2.setSelected(true);
 		}
 		return radio2;
 	}
 	public JRadioButton getCheckBox3(){
 		if(radio3 == null){
-			radio3 = new  JRadioButton("150ÆÚ",true);
+			radio3 = new  JRadioButton("150æœŸ",true);
 			radio3.setSelected(true);
 		}
 		return radio3;
@@ -179,7 +179,7 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 	
 	public JButton getXuanHBtn(){
 		if(xuanHBtn == null){
-			xuanHBtn = new JButton("12ºìÇò");
+			xuanHBtn = new JButton("12çº¢çƒ");
 		}
 		return xuanHBtn;
 	}
@@ -210,7 +210,7 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 	
 	public JButton getShaHBtn(){
 		if(shaHBtn == null){
-			shaHBtn = new JButton("ºìÇòÉ±ºÅ·ÖÎö");
+			shaHBtn = new JButton("çº¢çƒæ€å·åˆ†æ");
 		}
 		return shaHBtn;
 	}
@@ -222,7 +222,7 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 	private void initLize(){
 		setBounds(210,110,1200,500);
 		setLayout(new BorderLayout());
-		setTitle("Ñ¡ºÅ·ÖÎö");
+		setTitle("é€‰å·åˆ†æ");
 		JPanel btnPanel = new JPanel();
 		btnPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
 		btnPanel.add(getGenBtn());
@@ -278,7 +278,7 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 	private JPanel getshaHPanel(){
 		JPanel panel = new  JPanel(new BorderLayout());
 		panel.setSize(400, 300);
-		panel.setBorder(BorderFactory.createTitledBorder("ºìÇòÉ±ºÅ"));
+		panel.setBorder(BorderFactory.createTitledBorder("çº¢çƒæ€å·"));
 		JScrollPane msgPanel = new JScrollPane();
 		msgPanel.setViewportView(getShahTextArea());
 		JPanel northPanel = new JPanel();
@@ -290,7 +290,7 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 	private JPanel getXuanHPanel(){
 		JPanel panel = new  JPanel(new BorderLayout());
 		panel.setSize(600, 300);
-		panel.setBorder(BorderFactory.createTitledBorder("12ºìÇò"));
+		panel.setBorder(BorderFactory.createTitledBorder("12çº¢çƒ"));
 		JScrollPane msgPanel = new JScrollPane();
 		msgPanel.setViewportView(getXuanhTextArea());
 		JPanel northPanel = new JPanel();
@@ -304,7 +304,7 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 	private JPanel getBallPanel(){
 		JPanel panel = new  JPanel(new BorderLayout());
 		JPanel ballPanel = new JPanel(new FlowLayout());
-		ballPanel.setBorder(BorderFactory.createTitledBorder("Ñ¡ÔñºÅÂë"));
+		ballPanel.setBorder(BorderFactory.createTitledBorder("é€‰æ‹©å·ç "));
 		balls = new BallLabel[33];
 		for(int i =0;i<33;i++){
 			BallLabel ballLabel = null;
@@ -321,15 +321,15 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 		panel.add(ballPanel,"Center");
 		JPanel southPanel = new JPanel();
 		JLabel redBall = new JLabel();
-		ImageIcon img=new ImageIcon(ClassLoader.getSystemResource("images/red.png"));//´´½¨Í¼Æ¬¶ÔÏó
+		ImageIcon img=new ImageIcon(ClassLoader.getSystemResource("images/red.png"));//åˆ›å»ºå›¾ç‰‡å¯¹è±¡
 		redBall.setIcon(img);
-		JLabel redLabel = new JLabel("--ºìÉ«ÎªÑ¡ÖĞÇò");
+		JLabel redLabel = new JLabel("--çº¢è‰²ä¸ºé€‰ä¸­çƒ");
 		southPanel.add(redBall);
 		southPanel.add(redLabel);
 		JLabel volitBall = new JLabel();
-		ImageIcon img1=new ImageIcon(ClassLoader.getSystemResource("images/violet.png"));//´´½¨Í¼Æ¬¶ÔÏó
+		ImageIcon img1=new ImageIcon(ClassLoader.getSystemResource("images/violet.png"));//åˆ›å»ºå›¾ç‰‡å¯¹è±¡
 		volitBall.setIcon(img1);
-		JLabel volitLabel = new JLabel("--×ÏÉ«Îª±ØÑ¡Çò£¨Ë«»÷£©");
+		JLabel volitLabel = new JLabel("--ç´«è‰²ä¸ºå¿…é€‰çƒï¼ˆåŒå‡»ï¼‰");
 		southPanel.add(volitBall);
 		southPanel.add(volitLabel);
 		panel.add(southPanel,"South");
@@ -337,16 +337,16 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 	}
 	private JPanel getUserPanel(){
 		JPanel userPanel = new JPanel();
-		JLabel label = new JLabel("Ñ¡ºÅÆÚºÅ:");
+		JLabel label = new JLabel("é€‰å·æœŸå·:");
 		userPanel.add(label);
 		comboxBox = new JComboBox();
 		userPanel.add(comboxBox);
 		
-		JLabel clabel = new JLabel("·ÖÎöÀàĞÍÑ¡Ôñ£º");
+		JLabel clabel = new JLabel("åˆ†æç±»å‹é€‰æ‹©ï¼š");
 		userPanel.add(clabel);
-		checkbox = new JCheckBox("ÖØÏÖ");
+		checkbox = new JCheckBox("é‡ç°");
 		userPanel.add(checkbox);
-		checkbox3 = new JCheckBox("Óà3");
+		checkbox3 = new JCheckBox("ä½™3");
 		checkbox3.setSelected(true);
 		userPanel.add(checkbox3);
 		
@@ -360,10 +360,10 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 		group.add(getCheckBox2());
 		userPanel.add(getCheckBox3());
 		group.add(getCheckBox3());
-		cBtn = new JButton("È·¶¨");
+		cBtn = new JButton("ç¡®å®š");
 		userPanel.add(cBtn);
 		cBtn.addActionListener(this);
-		cancelBtn = new JButton("È¡ÏûÑ¡Ôñ");
+		cancelBtn = new JButton("å–æ¶ˆé€‰æ‹©");
 		userPanel.add(cancelBtn);
 		cancelBtn.addActionListener(this);
 		return userPanel;
@@ -382,9 +382,9 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 	}
 	private JPanel getSouthPanel(){
 		JPanel panel = new JPanel();
-		panel.setBorder(BorderFactory.createTitledBorder("Ñ¡ºÅÌõ¼ş"));
+		panel.setBorder(BorderFactory.createTitledBorder("é€‰å·æ¡ä»¶"));
 		panel.setSize(80, 100);
-		JLabel label2 = new JLabel("ÖÊÊı¸öÊı:");
+		JLabel label2 = new JLabel("è´¨æ•°ä¸ªæ•°:");
 		panel.add(label2);
 		
 		JLabel label21 = new JLabel(">=");
@@ -396,7 +396,7 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 		maxPrimeBox = new JComboBox();
 		panel.add(maxPrimeBox);
 		
-		JLabel label1 = new JLabel("Ğ¡Çø¸öÊı:");
+		JLabel label1 = new JLabel("å°åŒºä¸ªæ•°:");
 		panel.add(label1);
 		JLabel label31 = new JLabel(">=");
 		panel.add(label31);
@@ -407,7 +407,7 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 		maxXiaoshuBox = new JComboBox();
 		panel.add(maxXiaoshuBox);
 		
-		JLabel label = new JLabel("ÆæÊı¸öÊı:");
+		JLabel label = new JLabel("å¥‡æ•°ä¸ªæ•°:");
 		panel.add(label);
 		JLabel label41 = new JLabel(">=");
 		panel.add(label41);
@@ -432,27 +432,27 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 			maxPrimeBox.addItem(i+"");
 		}
 		
-		checkbox4 = new JCheckBox("Á¬ºÅ");
+		checkbox4 = new JCheckBox("è¿å·");
 		panel.add(checkbox4);
 		
-		checkbox5 = new JCheckBox("ºÍÖµ·¶Î§:");
+		checkbox5 = new JCheckBox("å’Œå€¼èŒƒå›´:");
 		panel.add(checkbox5);
 		minSum = new JTextField(5);
 		minSum.setText("80");
 		panel.add(minSum);
-		JLabel label11 = new JLabel("µ½");
+		JLabel label11 = new JLabel("åˆ°");
 		panel.add(label11);
 		maxSum = new JTextField(5);
 		maxSum.setText("140");
 		panel.add(maxSum);
 		
-		checkbox6 = new JCheckBox("×îĞ¡Êı·¶Î§:");
+		checkbox6 = new JCheckBox("æœ€å°æ•°èŒƒå›´:");
 		checkbox6.setSelected(true);
 		panel.add(checkbox6);
 		minfrist = new JTextField(2);
 		minfrist.setText("1");
 		panel.add(minfrist);
-		JLabel label12 = new JLabel("µ½");
+		JLabel label12 = new JLabel("åˆ°");
 		panel.add(label12);
 		maxfrist = new JTextField(2);
 		maxfrist.setText("9");
@@ -508,26 +508,26 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 		String msg = null;
 		if(list!= null && list.size()>0){
 			if(list.size()>1000){
-				msg = "µÃ³öÅÅÁĞ×éºÏ½á¹ûÎª¡¾"+list.size()+"¡¿´óÓÚ1000£¬·ÅÆúÏÔÊ¾";
-				JOptionPane.showMessageDialog(this, msg,"ÌáÊ¾",JOptionPane.INFORMATION_MESSAGE);
+				msg = "å¾—å‡ºæ’åˆ—ç»„åˆç»“æœä¸ºã€"+list.size()+"ã€‘å¤§äº1000ï¼Œæ”¾å¼ƒæ˜¾ç¤º";
+				JOptionPane.showMessageDialog(this, msg,"æç¤º",JOptionPane.INFORMATION_MESSAGE);
 				addMsg(msg);
 				return;
 			}
-			msg = "·ÖÎö½á¹ûÈçÏÂ£º<br/>";
+			msg = "åˆ†æç»“æœå¦‚ä¸‹ï¼š<br/>";
 			addMsg(msg);
 			list = sort(list);
 			msg = getList(list);
 			addMsg(msg);
-			addMsg("Ò»¹²ÓĞ"+list.size()+"¸öÅÅÁĞ×éºÏ");
+			addMsg("ä¸€å…±æœ‰"+list.size()+"ä¸ªæ’åˆ—ç»„åˆ");
 		}else{
-			msg = "Ã»ÓĞ·ûºÏÌõ¼şµÄ½á¹û";
+			msg = "æ²¡æœ‰ç¬¦åˆæ¡ä»¶çš„ç»“æœ";
 			addMsg(msg);
 		}
 	}
 	private List<String[]> dealBall() {
 		List<String> selectNos = getSelectNos();
 		if(selectNos.size() <=6){
-			JOptionPane.showMessageDialog(this, "ÇëÑ¡Ôñ6¸ö»òÁù¸öÒÔÉÏºìÇò","ÌáÊ¾",JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(this, "è¯·é€‰æ‹©6ä¸ªæˆ–å…­ä¸ªä»¥ä¸Šçº¢çƒ","æç¤º",JOptionPane.INFORMATION_MESSAGE);
 			return null;
 		}
 		String minjishu = (String) minJishuBox.getSelectedItem();
@@ -788,7 +788,7 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 	private boolean isSelect(String jishu1,String jishu2,String xiaoqu1,String xiaoqu2,String prime1,String prime2){
 		boolean isSelect = true;
 		if("".equals(jishu1) && "".equals(jishu2) &&"".equals(xiaoqu1)&&"".equals(xiaoqu2)&& "".equals(prime1)&& "".equals(prime2)){
-			JOptionPane.showMessageDialog(this, "±ØĞëÑ¡Ò»ÏîÑ¡ºÅÌõ¼ş·ñÔòÅÅÁĞ×éºÏÌ«¶à","ÌáÊ¾",JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(this, "å¿…é¡»é€‰ä¸€é¡¹é€‰å·æ¡ä»¶å¦åˆ™æ’åˆ—ç»„åˆå¤ªå¤š","æç¤º",JOptionPane.INFORMATION_MESSAGE);
 			isSelect = false;
 		}
 		return isSelect;
@@ -825,7 +825,7 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 		getShahTextArea().setText("");
 		String caipiaoNo = (String) comboxBox.getSelectedItem();
 		String caipiaoNoStr = String.valueOf(Integer.valueOf(caipiaoNo).intValue()+1);
-		addSHMsg("ÆÚºÅ£º"+caipiaoNoStr+"É±ºìÇò·ÖÎöÈçÏÂ");
+		addSHMsg("æœŸå·ï¼š"+caipiaoNoStr+"æ€çº¢çƒåˆ†æå¦‚ä¸‹");
 		Map<String,Integer> shaHMap = new HashMap<String,Integer>();
 		try{
 			AbsShahUrlReader reader = new Shah360UrlReader(caipiaoNoStr);
@@ -836,7 +836,7 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 //				setMap(shaHMap, redNos[i]);
 //			}
 //			
-//			addSHMsg("<a href='http://cp.360.cn/shdd/sha/?LotID=220051&ItemID=20343' >360ÍøÕ¾</a>£º"+no360s);
+//			addSHMsg("<a href='http://cp.360.cn/shdd/sha/?LotID=220051&ItemID=20343' >360ç½‘ç«™</a>ï¼š"+no360s);
 			reader = new OkooShahUrlReader(caipiaoNoStr);
 			redNos  = reader.getRedNos();
 			no360s = "";
@@ -844,7 +844,7 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 				no360s += redNos[i]+" ";
 				setMap(shaHMap, redNos[i]);
 			}
-			addSHMsg("<a href='http://www.okooo.com/shuangseqiu/ssqsh/fn/' > °Ä¿ÍÍø</a> &nbsp;£º"+no360s);
+			addSHMsg("<a href='http://www.okooo.com/shuangseqiu/ssqsh/fn/' > æ¾³å®¢ç½‘</a> &nbsp;ï¼š"+no360s);
 			
 			reader = new CaijShahUrlReader(caipiaoNoStr);
 			redNos  = reader.getRedNos();
@@ -853,7 +853,7 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 				no360s += redNos[i]+" ";
 				setMap(shaHMap, redNos[i]);
 			}
-			addSHMsg("<a href='http://zst.cjcp.com.cn/shdd/ssq.php?czid=ssq&type=hq' > ²Ê¾­Íø</a> &nbsp;£º"+no360s);
+			addSHMsg("<a href='http://zst.cjcp.com.cn/shdd/ssq.php?czid=ssq&type=hq' > å½©ç»ç½‘</a> &nbsp;ï¼š"+no360s);
 			Iterator<String> it = shaHMap.keySet().iterator();
 			List<ReportVo> lis = new ArrayList<ReportVo>();
 			while(it.hasNext()){
@@ -867,9 +867,9 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 			ShaHComparator comparator = new ShaHComparator();
 			Collections.sort(lis, comparator);
 			for(int i =0;i<lis.size();i++){
-				addSHMsg( "&nbsp;&nbsp;ºÅÂë¡¾"+lis.get(i).getCaipiaoNo()+"¡¿ÓĞ¡¾"+lis.get(i).getTimes()+"¡¿´Î");
+				addSHMsg( "&nbsp;&nbsp;å·ç ã€"+lis.get(i).getCaipiaoNo()+"ã€‘æœ‰ã€"+lis.get(i).getTimes()+"ã€‘æ¬¡");
 			}
-			addSHMsg( "&nbsp;&nbsp;Ò»¹²É±ºÅ"+lis.size()+"¸ö");
+			addSHMsg( "&nbsp;&nbsp;ä¸€å…±æ€å·"+lis.size()+"ä¸ª");
 		}catch(Exception e){
 			
 		}
@@ -879,13 +879,13 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 		getXuanhTextArea().setText("");
 		String caipiaoNo = (String) comboxBox.getSelectedItem();
 		String caipiaoNoStr = String.valueOf(Integer.valueOf(caipiaoNo).intValue()+1);
-		addXhMsg("ÆÚºÅ£º"+caipiaoNoStr+"12ºìÇò·ÖÎöÈçÏÂ");
+		addXhMsg("æœŸå·ï¼š"+caipiaoNoStr+"12çº¢çƒåˆ†æå¦‚ä¸‹");
 		Map<String,Integer> redHMap = new HashMap<String,Integer>();
 		Map<String,Integer> blueHMap = new HashMap<String,Integer>();
 		try{
 			Sina12UrlReader reader = new Sina12UrlReader(caipiaoNoStr);
 			List<Xh12RedVo>  redNos  = reader.getRedNos();
-			addXhMsg("<a href='http://sports.sina.com.cn/l/ssqleitai/"+reader.getCaiPiaoNo().substring(2)+".html' > ĞÂÀËÃ½ÌåÀŞÌ¨</a> &nbsp;£º");
+			addXhMsg("<a href='http://sports.sina.com.cn/l/ssqleitai/"+reader.getCaiPiaoNo().substring(2)+".html' > æ–°æµªåª’ä½“æ“‚å°</a> &nbsp;ï¼š");
 			for(Xh12RedVo vo : redNos){
 				addXhMsg(vo.toString());
 				List<String> redList = vo.getRed12Ball();
@@ -909,11 +909,11 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 			}
 			ShaHComparator comparator = new ShaHComparator();
 			Collections.sort(lis, comparator);
-			addXhMsg("ºìÇòÈçÏÂ£º");
+			addXhMsg("çº¢çƒå¦‚ä¸‹ï¼š");
 			for(int i =0;i<lis.size();i++){
-				addXhMsg( "&nbsp;&nbsp;ºÅÂë¡¾"+lis.get(i).getCaipiaoNo()+"¡¿ÓĞ¡¾"+lis.get(i).getTimes()+"¡¿´Î");
+				addXhMsg( "&nbsp;&nbsp;å·ç ã€"+lis.get(i).getCaipiaoNo()+"ã€‘æœ‰ã€"+lis.get(i).getTimes()+"ã€‘æ¬¡");
 			}
-			addXhMsg( "&nbsp;&nbsp;Ò»¹²Ñ¡ºÅ"+lis.size()+"¸ö");
+			addXhMsg( "&nbsp;&nbsp;ä¸€å…±é€‰å·"+lis.size()+"ä¸ª");
 			
 			 it = blueHMap.keySet().iterator();
 			 lis = new ArrayList<ReportVo>();
@@ -927,11 +927,11 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 			}
 			comparator = new ShaHComparator();
 			Collections.sort(lis, comparator);
-			addXhMsg("À¶ÇòÈçÏÂ£º");
+			addXhMsg("è“çƒå¦‚ä¸‹ï¼š");
 			for(int i =0;i<lis.size();i++){
-				addXhMsg( "&nbsp;&nbsp;ºÅÂë¡¾"+lis.get(i).getCaipiaoNo()+"¡¿ÓĞ¡¾"+lis.get(i).getTimes()+"¡¿´Î");
+				addXhMsg( "&nbsp;&nbsp;å·ç ã€"+lis.get(i).getCaipiaoNo()+"ã€‘æœ‰ã€"+lis.get(i).getTimes()+"ã€‘æ¬¡");
 			}
-			addXhMsg( "&nbsp;&nbsp;Ò»¹²Ñ¡ºÅ"+lis.size()+"¸ö");
+			addXhMsg( "&nbsp;&nbsp;ä¸€å…±é€‰å·"+lis.size()+"ä¸ª");
 		}catch(Exception e){
 			
 		}
@@ -951,10 +951,10 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 		}
 		list = sort(list);
 		if(list.size()>30){
-			JOptionPane.showMessageDialog(this, "ÅÅÁĞ×éºÏÎª¡¾"+list.size()+"¡¿¸ö´óÓÚ30¸ö²»µ¼³öÎÄ¼ş","ÌáÊ¾",JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(this, "æ’åˆ—ç»„åˆä¸ºã€"+list.size()+"ã€‘ä¸ªå¤§äº30ä¸ªä¸å¯¼å‡ºæ–‡ä»¶","æç¤º",JOptionPane.INFORMATION_MESSAGE);
 			return;
 		}
-		File folder = new File("D:\\Ë«É«Çò");
+		File folder = new File("D:\\åŒè‰²çƒ");
 		BufferedWriter output  = null;
 		String caipiaoNo = (String) comboxBox.getSelectedItem();
 		File file = null;
@@ -963,13 +963,13 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 				if(folder.mkdir()){
 				}
 			}
-			file = new File("D:\\Ë«É«Çò\\"+(Integer.valueOf(caipiaoNo)+1)+".txt");
+			file = new File("D:\\åŒè‰²çƒ\\"+(Integer.valueOf(caipiaoNo)+1)+".txt");
 			if(!file.exists()){
 				file.createNewFile();
 			}
 			output = new BufferedWriter(new FileWriter(file,true));
-			output.write("====================="+DateUtil.format(new Date(System.currentTimeMillis()))+ "·ÖÎöÆÚºÅ¡¾"+(Integer.valueOf(caipiaoNo)+1)+"¡¿=============================================");
-			output.write("\n  ·ÖÎö½á¹ûÈçÏÂ£º\n");
+			output.write("====================="+DateUtil.format(new Date(System.currentTimeMillis()))+ "åˆ†ææœŸå·ã€"+(Integer.valueOf(caipiaoNo)+1)+"ã€‘=============================================");
+			output.write("\n  åˆ†æç»“æœå¦‚ä¸‹ï¼š\n");
 			output.write(getSelectNo());
 			for(String[] balls :list){
 				output.write("\n");
@@ -977,9 +977,9 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 					output.write(no+"  ");
 				}
 			}
-			output.write("\nÒ»¹²ÓĞ"+list.size()+"¸öÅÅÁĞ×éºÏ\n\n");
+			output.write("\nä¸€å…±æœ‰"+list.size()+"ä¸ªæ’åˆ—ç»„åˆ\n\n");
 			output.flush();
-			JOptionPane.showMessageDialog(this, "³É¹¦µ¼³öÎÄ¼ş,ÎÄ¼şµØÖ·Îª¡¾D:\\Ë«É«Çò\\"+(Integer.valueOf(caipiaoNo)+1)+".txt¡¿","ÌáÊ¾",JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(this, "æˆåŠŸå¯¼å‡ºæ–‡ä»¶,æ–‡ä»¶åœ°å€ä¸ºã€D:\\åŒè‰²çƒ\\"+(Integer.valueOf(caipiaoNo)+1)+".txtã€‘","æç¤º",JOptionPane.INFORMATION_MESSAGE);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
@@ -993,21 +993,21 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 		}
 	}
 	private String getSelectNo(){
-		StringBuffer res = new StringBuffer("  ¿ÉÑ¡ºÅÎª£º ");
+		StringBuffer res = new StringBuffer("  å¯é€‰å·ä¸ºï¼š ");
 		String specialNos= "";
 		for(int i =0;balls != null &&i<balls.length;i++){
 			if(balls[i].isSelected()){
 				res.append(balls[i].getBallNo()+" ");
 			}
 			if(balls[i].isSpecial()){
-				specialNos+=" ¡¾"+balls[i].getBallNo()+"¡¿";
+				specialNos+=" ã€"+balls[i].getBallNo()+"ã€‘";
 			}
 		}
-		res.append("\n  Ñ¡ºÅÌõ¼ş£º");
+		res.append("\n  é€‰å·æ¡ä»¶ï¼š");
 		res.append("\n");
 		
 		if(!"".equals(specialNos)){
-			res.append("  ±ØÑ¡ÇòÎª£º" + specialNos);
+			res.append("  å¿…é€‰çƒä¸ºï¼š" + specialNos);
 		}
 		String minjishu = (String) minJishuBox.getSelectedItem();
 		String maxjishu = (String) maxJishuBox.getSelectedItem();
@@ -1019,44 +1019,44 @@ public class CaipiaoXhWin extends JFrame  implements ActionListener{
 		boolean isSum = checkbox5.isSelected();
 		boolean isFrist = checkbox6.isSelected();
 		if(!"".equals(minprime) || !"".equals(maxprime)){
-			res.append("  ÖÊÊı¸öÊı ");
+			res.append("  è´¨æ•°ä¸ªæ•° ");
 			if(!"".equals(minjishu)){
-				res.append(" >=¡¾"+minprime+"¡¿ ");
+				res.append(" >=ã€"+minprime+"ã€‘ ");
 			}
 			if(!"".equals(maxprime)){
-				res.append(" <=¡¾"+maxprime+"¡¿ ");
+				res.append(" <=ã€"+maxprime+"ã€‘ ");
 			}
 		}
 		if(!"".equals(minxiaoqu)&&!"".equals(maxxiaoqu)){
-			res.append("  Ğ¡Çø¸öÊı" );
+			res.append("  å°åŒºä¸ªæ•°" );
 			if(!"".equals(minxiaoqu)){
-				res.append(" >=¡¾"+minxiaoqu+"¡¿ ");
+				res.append(" >=ã€"+minxiaoqu+"ã€‘ ");
 			}
 			if(!"".equals(maxxiaoqu)){
-				res.append(" <=¡¾"+maxxiaoqu+"¡¿ ");
+				res.append(" <=ã€"+maxxiaoqu+"ã€‘ ");
 			}
 		}
 		if(!"".equals(minjishu) || !"".equals(maxjishu)){
-			res.append("  ÆæÊı¸öÊı ");
+			res.append("  å¥‡æ•°ä¸ªæ•° ");
 			if(!"".equals(minjishu)){
-				res.append(" >=¡¾"+minjishu+"¡¿ ");
+				res.append(" >=ã€"+minjishu+"ã€‘ ");
 			}
 			if(!"".equals(maxjishu)){
-				res.append(" <=¡¾"+maxjishu+"¡¿ ");
+				res.append(" <=ã€"+maxjishu+"ã€‘ ");
 			}
 		}
 		if(isLianhao){
-			res.append("  ÓĞÁ¬ºÅ");
+			res.append("  æœ‰è¿å·");
 		}
 		if(isSum){
 			int min = Integer.valueOf(minSum.getText()).intValue();
 			int max = Integer.valueOf(maxSum.getText()).intValue();
-			res.append("  ºÍÖµ´óĞ¡·¶Î§Îª"+min+"-"+max);
+			res.append("  å’Œå€¼å¤§å°èŒƒå›´ä¸º"+min+"-"+max);
 		}
 		if(isFrist){
 			int min = Integer.valueOf(minfrist.getText()).intValue();
 			int max = Integer.valueOf(maxfrist.getText()).intValue();
-			res.append("  ×îĞ¡Öµ·¶Î§Îª"+min+"-"+max);
+			res.append("  æœ€å°å€¼èŒƒå›´ä¸º"+min+"-"+max);
 		}
 		return res.toString();
 	}

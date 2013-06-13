@@ -1,4 +1,4 @@
-package com.richie.caipiao.ui;
+ï»¿package com.richie.caipiao.ui;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ public class CaipiaoModel extends AbstractTableModel {
 	 */
 	private static final long serialVersionUID = 1L;
 	private List<CaipiaoVo> caipiaoList;
-	private String[] title_name = { "¿ª½±ÈÕÆÚ", "ÆÚºÅ", "1", "2", "3", "4", "5", "6",
+	private String[] title_name = { "å¼€å¥–æ—¥æœŸ", "æœŸå·", "1", "2", "3", "4", "5", "6",
 			"7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17",
 			"18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28",
 			"29", "30", "31", "32", "33", "1", "2", "3", "4", "5", "6",

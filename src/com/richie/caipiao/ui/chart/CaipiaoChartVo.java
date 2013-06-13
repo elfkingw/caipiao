@@ -1,4 +1,4 @@
-package com.richie.caipiao.ui.chart;
+﻿package com.richie.caipiao.ui.chart;
 
 public class CaipiaoChartVo {
 

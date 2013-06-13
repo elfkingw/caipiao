@@ -1,4 +1,4 @@
-package com.richie.caipiao.vo;
+ï»¿package com.richie.caipiao.vo;
 
 import java.util.Comparator;
 
@@ -9,7 +9,7 @@ public class CaipiaoComparator implements Comparator {
 		ReportVo vo0 = (ReportVo) o1;
 		ReportVo vo1 = (ReportVo) o2;
 
-		// Ê×ÏÈ±È½ÏÄêÁä£¬Èç¹ûÄêÁäÏàÍ¬£¬Ôò±È½ÏÃû×Ö
+		// é¦–å…ˆæ¯”è¾ƒå¹´é¾„ï¼Œå¦‚æœå¹´é¾„ç›¸åŒï¼Œåˆ™æ¯”è¾ƒåå­—
 		if (vo0.getCaipiaoNo().compareTo(vo1.getCaipiaoNo())<0) {
 			return -1;
 		} else {

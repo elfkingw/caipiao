@@ -1,4 +1,4 @@
-package com.richie.caipiao.ui;
+ï»¿package com.richie.caipiao.ui;
 
 
 import java.awt.BorderLayout;
@@ -40,32 +40,32 @@ public class CaipiaoChartUI extends JPanel implements ActionListener{
 	private Box chartPanel;
 	public JButton getGenBtn(){
 		if(genBtn == null){
-			genBtn = new JButton("²ÊÆ±·ÖÎö");
+			genBtn = new JButton("å½©ç¥¨åˆ†æ");
 		}
 		return genBtn;
 	}
 	public JButton getClearBtn(){
 		if(clearBtn == null){
-			clearBtn = new JButton("Çå¿ÕÏûÏ¢");
+			clearBtn = new JButton("æ¸…ç©ºæ¶ˆæ¯");
 		}
 		return clearBtn;
 	}
 	public JRadioButton getCheckBox(){
 		if(radio == null){
-			radio = new  JRadioButton("30ÆÚ",true);
+			radio = new  JRadioButton("30æœŸ",true);
 		}
 		return radio;
 	}
 	public JRadioButton getCheckBox0(){
 		if(radio0 == null){
-			radio0 = new  JRadioButton("50ÆÚ",true);
+			radio0 = new  JRadioButton("50æœŸ",true);
 			radio0.setSelected(true);
 		}
 		return radio0;
 	}
 	public JRadioButton getCheckBox1(){
 		if(radio1 == null){
-			radio1 = new  JRadioButton("100ÆÚ",true);
+			radio1 = new  JRadioButton("100æœŸ",true);
 			radio1.setSelected(true);
 		}
 		return radio1;
@@ -92,7 +92,7 @@ public class CaipiaoChartUI extends JPanel implements ActionListener{
 //		add(btnPanel,"North");
 		JSplitPane centerPanel = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
 		JPanel userPanel = new JPanel();
-		JLabel label = new JLabel("ÖÜÆÚ:");
+		JLabel label = new JLabel("å‘¨æœŸ:");
 		userPanel.add(label);
 //		comboxBox = new JComboBox();
 //		userPanel.add(comboxBox);
@@ -177,19 +177,19 @@ public class CaipiaoChartUI extends JPanel implements ActionListener{
 			chartVo3.setValue(sum);
 			sumList.add(chartVo3);
 		}
-		LineChartGen primeGen = new LineChartGen(primeList,"ÖÊÊı×ßÊÆÍ¼","¸öÊı","ÖÊÊı");
+		LineChartGen primeGen = new LineChartGen(primeList,"è´¨æ•°èµ°åŠ¿å›¾","ä¸ªæ•°","è´¨æ•°");
 		JFreeChart primChart = primeGen.createChart(size);
 		ChartPanel primPanel = new ChartPanel(primChart);
 		chartPanel.add(primPanel);
-		LineChartGen xiaoshuGen = new LineChartGen(xiaoshuList,"Ğ¡Çø×ßÊÆÍ¼","¸öÊı","Ğ¡Çø");
+		LineChartGen xiaoshuGen = new LineChartGen(xiaoshuList,"å°åŒºèµ°åŠ¿å›¾","ä¸ªæ•°","å°åŒº");
 		JFreeChart xiaoshuChart = xiaoshuGen.createChart(size);
 		ChartPanel xiaoshuPanel = new ChartPanel(xiaoshuChart, true);
 		chartPanel.add(xiaoshuPanel);
-		LineChartGen jishuGen = new LineChartGen(jishuList,"ÆæÊı×ßÊÆÍ¼","¸öÊı","ÆæÊı");
+		LineChartGen jishuGen = new LineChartGen(jishuList,"å¥‡æ•°èµ°åŠ¿å›¾","ä¸ªæ•°","å¥‡æ•°");
 		JFreeChart jishuChart = jishuGen.createChart(size);
 		ChartPanel jishuPanel = new ChartPanel(jishuChart, true);
 		chartPanel.add(jishuPanel);
-		LineChartGen sumGen = new LineChartGen(sumList,"ºÍÖµ×ßÊÆÍ¼","¸öÊı","ºÍÖµ");
+		LineChartGen sumGen = new LineChartGen(sumList,"å’Œå€¼èµ°åŠ¿å›¾","ä¸ªæ•°","å’Œå€¼");
 		JFreeChart sumChart = sumGen.createChart(size);
 		ChartPanel sumPanel = new ChartPanel(sumChart, true);
 		chartPanel.add(sumPanel);

@@ -1,4 +1,4 @@
-/* ===========================================================
+﻿/* ===========================================================
  * JFreeChart : a free chart library for the Java(tm) platform
  * ===========================================================
  *
@@ -1073,7 +1073,7 @@ public abstract class Axis implements Cloneable, Serializable {
             PlotRenderingInfo plotState) {
 
         if (plotState == null || plotState.getOwner() == null) {
-            return;  // no need to create entity if we can´t save it anyways...
+            return;  // no need to create entity if we can麓t save it anyways...
         }
         Rectangle2D hotspot = null;
         if (edge.equals(RectangleEdge.TOP)) {

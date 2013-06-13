@@ -1,4 +1,4 @@
-package org.jfree.test;
+﻿package org.jfree.test;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -35,22 +35,22 @@ public class LineChartDemo1 extends ApplicationFrame {
 
 	private static CategoryDataset createDataset() {
 		DefaultCategoryDataset localDefaultCategoryDataset = new DefaultCategoryDataset();
-		localDefaultCategoryDataset.addValue(0, "质数", "112");
-		localDefaultCategoryDataset.addValue(2, "质数", "113");
-		localDefaultCategoryDataset.addValue(2, "质数", "114");
-		localDefaultCategoryDataset.addValue(3, "质数", "115");
-		localDefaultCategoryDataset.addValue(3, "质数", "116");
-		localDefaultCategoryDataset.addValue(5, "质数", "117");
-		localDefaultCategoryDataset.addValue(2, "质数", "118");
-		localDefaultCategoryDataset.addValue(3, "质数", "119");
-		localDefaultCategoryDataset.addValue(2, "质数", "120");
-		localDefaultCategoryDataset.addValue(2, "质数", "124");
-		localDefaultCategoryDataset.addValue(3, "质数", "125");
-		localDefaultCategoryDataset.addValue(3, "质数", "126");
-		localDefaultCategoryDataset.addValue(3, "质数", "127");
-		localDefaultCategoryDataset.addValue(2, "质数", "128");
-		localDefaultCategoryDataset.addValue(3, "质数", "129");
-		localDefaultCategoryDataset.addValue(2, "质数", "120");
+		localDefaultCategoryDataset.addValue(0, "璐ㄦ暟", "112");
+		localDefaultCategoryDataset.addValue(2, "璐ㄦ暟", "113");
+		localDefaultCategoryDataset.addValue(2, "璐ㄦ暟", "114");
+		localDefaultCategoryDataset.addValue(3, "璐ㄦ暟", "115");
+		localDefaultCategoryDataset.addValue(3, "璐ㄦ暟", "116");
+		localDefaultCategoryDataset.addValue(5, "璐ㄦ暟", "117");
+		localDefaultCategoryDataset.addValue(2, "璐ㄦ暟", "118");
+		localDefaultCategoryDataset.addValue(3, "璐ㄦ暟", "119");
+		localDefaultCategoryDataset.addValue(2, "璐ㄦ暟", "120");
+		localDefaultCategoryDataset.addValue(2, "璐ㄦ暟", "124");
+		localDefaultCategoryDataset.addValue(3, "璐ㄦ暟", "125");
+		localDefaultCategoryDataset.addValue(3, "璐ㄦ暟", "126");
+		localDefaultCategoryDataset.addValue(3, "璐ㄦ暟", "127");
+		localDefaultCategoryDataset.addValue(2, "璐ㄦ暟", "128");
+		localDefaultCategoryDataset.addValue(3, "璐ㄦ暟", "129");
+		localDefaultCategoryDataset.addValue(2, "璐ㄦ暟", "120");
 		// localDefaultCategoryDataset.addValue(2.0D, "Series 2", "Category 1");
 		// localDefaultCategoryDataset.addValue(4.0D, "Series 2", "Category 2");
 		// localDefaultCategoryDataset.addValue(4.0D, "Series 2", "Category 3");
@@ -65,38 +65,38 @@ public class LineChartDemo1 extends ApplicationFrame {
 	}
 
 	private static JFreeChart createChart(CategoryDataset paramCategoryDataset) {
-		// 创建主题样式
+		// 鍒涘缓涓婚镙峰纺
 		StandardChartTheme standardChartTheme = new StandardChartTheme("CN");
-		// 设置标题字体
-		standardChartTheme.setExtraLargeFont(new Font("隶书", Font.BOLD, 20));
-		// 设置图例的字体
-		standardChartTheme.setRegularFont(new Font("宋书", Font.PLAIN, 12));
-		// 设置轴向的字体
-		standardChartTheme.setLargeFont(new Font("宋书", Font.PLAIN, 12));
-		// 应用主题样式
+		// 璁剧疆镙囬瀛椾綋
+		standardChartTheme.setExtraLargeFont(new Font("闅朵功", Font.BOLD, 20));
+		// 璁剧疆锲句緥镄勫瓧浣?
+		standardChartTheme.setRegularFont(new Font("瀹嬩功", Font.PLAIN, 12));
+		// 璁剧疆杞村悜镄勫瓧浣?
+		standardChartTheme.setLargeFont(new Font("瀹嬩功", Font.PLAIN, 12));
+		// 搴旗敤涓婚镙峰纺
 		ChartFactory.setChartTheme(standardChartTheme);
-		JFreeChart localJFreeChart = ChartFactory.createLineChart("质数走势图",
-				"期号", "个数", paramCategoryDataset, PlotOrientation.VERTICAL,
+		JFreeChart localJFreeChart = ChartFactory.createLineChart("璐ㄦ暟璧板娍锲?,
+				"链熷佛", "涓暟", paramCategoryDataset, PlotOrientation.VERTICAL,
 				true, true, false);
 		CategoryPlot localCategoryPlot = (CategoryPlot) localJFreeChart
 				.getPlot();
-//		SymbolAxis localSymbolAxis = new SymbolAxis("个数", new String[] {
+//		SymbolAxis localSymbolAxis = new SymbolAxis("涓暟", new String[] {
 //				"0", "1", "2", "3", "4", "5", "6" });
 //		localCategoryPlot.setRangeAxis(localSymbolAxis);
 		ChartUtilities.applyCurrentTheme(localJFreeChart);
 		LineAndShapeRenderer xyitem = (LineAndShapeRenderer) localCategoryPlot
 		.getRenderer();
 		CategoryPlot plot = (CategoryPlot) localJFreeChart.getPlot();
-		//设置网格背景颜色
+		//璁剧疆缃戞牸鑳屾櫙棰滆壊
 		plot.setBackgroundPaint(Color.white);
-		//设置网格竖线颜色
+		//璁剧疆缃戞牸绔栫嚎棰滆壊
 		plot.setDomainGridlinePaint(Color.black);
-		//设置网格横线颜色
+		//璁剧疆缃戞牸妯嚎棰滆壊
 		plot.setRangeGridlinePaint(Color.black);
-		//设置曲线图与xy轴的距离
+		//璁剧疆镟茬嚎锲句笌xy杞寸殑璺濈
 		plot.setAxisOffset(new RectangleInsets(0D, 0D, 0D, 0D));
-		//设置曲线是否显示数据点
-		//设置曲线显示各数据点的值
+		//璁剧疆镟茬嚎鏄惁鏄剧ず鏁版嵁镣?
+		//璁剧疆镟茬嚎鏄剧ず鍚勬暟鎹偣镄勫€?
 		xyitem.setBaseItemLabelsVisible(true);   
 		xyitem.setBasePositiveItemLabelPosition(new ItemLabelPosition(ItemLabelAnchor.OUTSIDE12, TextAnchor.BASELINE_LEFT));
 //		xyitem.setBaseItemLabelGenerator(new StandardXYItemLabelGenerator());
@@ -108,9 +108,9 @@ public class LineChartDemo1 extends ApplicationFrame {
 		
 //		LineAndShapeRenderer localLineAndShapeRenderer = (LineAndShapeRenderer) localCategoryPlot
 //				.getRenderer();
-//		//折点
+//		//鎶樼偣
 //		localLineAndShapeRenderer.setSeriesShapesVisible(0, true);
-//		//线条粗细
+//		//绾挎浔绮楃粏
 //		localLineAndShapeRenderer.setSeriesStroke(0, new BasicStroke(1.5F));
 //		localLineAndShapeRenderer.setDrawOutlines(true);
 //		localLineAndShapeRenderer.setBasePositiveItemLabelPosition(new ItemLabelPosition(ItemLabelAnchor.OUTSIDE12, TextAnchor.BASELINE_LEFT));

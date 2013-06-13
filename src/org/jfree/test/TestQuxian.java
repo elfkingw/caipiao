@@ -1,4 +1,4 @@
-package org.jfree.test;
+﻿package org.jfree.test;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -24,10 +24,10 @@ import org.jfree.ui.TextAnchor;
 
 public class TestQuxian {
 	public static void  main(String[] args){
-		TimeSeries timeSeries = new TimeSeries("阿蜜果blog访问量统计", Month.class);
-		//时间曲线数据集合
+		TimeSeries timeSeries = new TimeSeries("阒胯湝鏋渂log璁块棶閲忕粺璁?, Month.class);
+		//镞堕棿镟茬嚎鏁版嵁板嗗悎
 		TimeSeriesCollection lineDataset = new TimeSeriesCollection();
-		//构造数据集合
+		//鏋勯€犳暟鎹泦鍚?
 		timeSeries.add(new Month(1, 2007), 1);
 		timeSeries.add(new Month(2, 2007), 2);
 		timeSeries.add(new Month(3, 2007), 3);
@@ -41,22 +41,22 @@ public class TestQuxian {
 		timeSeries.add(new Month(11, 2007), 2);
 		timeSeries.add(new Month(12, 2007), 0);
 		lineDataset.addSeries(timeSeries);
-		JFreeChart chart = ChartFactory.createTimeSeriesChart("访问量统计时间线", "月份", "访问量", lineDataset, true, true, true);
+		JFreeChart chart = ChartFactory.createTimeSeriesChart("璁块棶閲忕粺璁℃椂闂寸嚎", "链堜唤", "璁块棶閲?, lineDataset, true, true, true);
 		XYPlot plot = (XYPlot) chart.getPlot();
-		//设置网格背景颜色
+		//璁剧疆缃戞牸鑳屾櫙棰滆壊
 		plot.setBackgroundPaint(Color.white);
-		//设置网格竖线颜色
+		//璁剧疆缃戞牸绔栫嚎棰滆壊
 		plot.setDomainGridlinePaint(Color.pink);
-		//设置网格横线颜色
+		//璁剧疆缃戞牸妯嚎棰滆壊
 		plot.setRangeGridlinePaint(Color.BLACK);
-		//设置曲线图与xy轴的距离
+		//璁剧疆镟茬嚎锲句笌xy杞寸殑璺濈
 		plot.setAxisOffset(new RectangleInsets(0D, 0D, 0D, 10D));
-		//设置曲线是否显示数据点
+		//璁剧疆镟茬嚎鏄惁鏄剧ず鏁版嵁镣?
 //		xylineandshaperenderer.setBaseShapesVisible(true);
-		//设置曲线显示各数据点的值
+		//璁剧疆镟茬嚎鏄剧ず鍚勬暟鎹偣镄勫€?
 		XYItemRenderer xyitem = plot.getRenderer();  
-		//折点
-//		//线条粗细
+		//鎶樼偣
+//		//绾挎浔绮楃粏
 		
 		xyitem.setSeriesStroke(0, new BasicStroke(2F));
 		xyitem.setBaseItemLabelsVisible(true);   
@@ -64,21 +64,21 @@ public class TestQuxian {
 		xyitem.setBaseItemLabelGenerator(new StandardXYItemLabelGenerator());
 		xyitem.setBaseItemLabelFont(new Font("Dialog", 1, 14));
 		plot.setRenderer(xyitem);
-		//设置子标题
-		TextTitle subtitle = new TextTitle("2007年度", new Font("黑体", Font.BOLD, 12));
+		//璁剧疆瀛愭爣棰?
+		TextTitle subtitle = new TextTitle("2007骞村害", new Font("榛戜綋", Font.BOLD, 12));
 		chart.addSubtitle(subtitle);
-		//设置主标题
+		//璁剧疆涓绘爣棰?
 		chart.setAntiAlias(true);
 	
-		//创建主题样式  
+		//鍒涘缓涓婚镙峰纺  
 		   StandardChartTheme standardChartTheme=new StandardChartTheme("CN");  
-		   //设置标题字体  
-		   standardChartTheme.setExtraLargeFont(new Font("隶书",Font.BOLD,20));  
-		   //设置图例的字体  
-		   standardChartTheme.setRegularFont(new Font("宋书",Font.PLAIN,12));  
-		   //设置轴向的字体  
-		   standardChartTheme.setLargeFont(new Font("宋书",Font.PLAIN,12));  
-		   //应用主题样式  
+		   //璁剧疆镙囬瀛椾綋  
+		   standardChartTheme.setExtraLargeFont(new Font("闅朵功",Font.BOLD,20));  
+		   //璁剧疆锲句緥镄勫瓧浣? 
+		   standardChartTheme.setRegularFont(new Font("瀹嬩功",Font.PLAIN,12));  
+		   //璁剧疆杞村悜镄勫瓧浣? 
+		   standardChartTheme.setLargeFont(new Font("瀹嬩功",Font.PLAIN,12));  
+		   //搴旗敤涓婚镙峰纺  
 		   ChartFactory.setChartTheme(standardChartTheme); 
 		 
 		
