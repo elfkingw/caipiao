@@ -204,10 +204,14 @@ public class CaipiaoReportUI extends JPanel implements ActionListener{
 								String[] nextNos = nextVo.getRedNo();
 								for(int z =0;z<nextNos.length;z++){
 									String nextNo = nextNos[z];
-									if(!isYu3 && isXiao && 2== nextVo.getType(no) && 1==nextVo.getType(nextNo)){
-										setMap(allMap, nosMap, vo, nextVo,nextNo);
-									}
-									if(!isYu3 && isDaqu && 2==nextVo.getType(no) && 3==nextVo.getType(nextNo)){
+									// 不考虑小区大区
+//									if(!isYu3 && isXiao && 2== nextVo.getType(no) && 1==nextVo.getType(nextNo)){
+//										setMap(allMap, nosMap, vo, nextVo,nextNo);
+//									}
+//									if(!isYu3 && isDaqu && 2==nextVo.getType(no) && 3==nextVo.getType(nextNo)){
+//										setMap(allMap, nosMap, vo, nextVo,nextNo);
+//									}
+									if(!isYu3 ){
 										setMap(allMap, nosMap, vo, nextVo,nextNo);
 									}
 									if((isYu3 &&(nextVo.getYu3Type(no) ==  nextVo.getYu3Type(nextNo)))||
