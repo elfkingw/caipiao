@@ -214,8 +214,7 @@ public class CaipiaoReportUI extends JPanel implements ActionListener{
 									if(!isYu3 ){
 										setMap(allMap, nosMap, vo, nextVo,nextNo);
 									}
-									if((isYu3 &&(nextVo.getYu3Type(no) ==  nextVo.getYu3Type(nextNo)))||
-											(!isYu3 &&(nextVo.getType(no) == nextVo.getType(nextNo)))){
+									if((isYu3 &&(nextVo.getYu3Type(no) ==  nextVo.getYu3Type(nextNo)))){
 										setMap(allMap, nosMap, vo, nextVo,nextNo);
 									}
 								}
